@@ -53,16 +53,16 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#">{{__('homepage.Home')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">{{__('homepage.About')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#">{{__('homepage.Services')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#">{{__('homepage.Contact')}}</a>
                         </li>
                         <li class="nav-item pl-2 dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"

@@ -72,15 +72,15 @@
                                 Vietnam
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item" href="#"><img src="flag1.png" alt="Flag 1"
+                                <li><a class="dropdown-item" href="{{ url('/vi') }}"><img src="flag1.png" alt="Flag 1"
                                             width="20" height="20"
-                                            class="d-inline-block align-text-top me-1">Language 1</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="flag2.png" alt="Flag 2"
+                                            class="d-inline-block align-text-top me-1">Tiếng Việt</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/en') }}"><img src="flag2.png" alt="Flag 2"
                                             width="20" height="20"
-                                            class="d-inline-block align-text-top me-1">Language 2</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="flag3.png" alt="Flag 3"
+                                            class="d-inline-block align-text-top me-1">English</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/jp') }}"><img src="flag3.png" alt="Flag 3"
                                             width="20" height="20"
-                                            class="d-inline-block align-text-top me-1">Language 3</a></li>
+                                            class="d-inline-block align-text-top me-1">日本語</a></li>
                             </ul>
                         </li>
                     </ul>

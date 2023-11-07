@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 
@@ -14,22 +15,12 @@ use Illuminate\Support\Facades\App;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-// Route::get('/home', function () {
-//     return view('homepage');
-// });
-
-// Route::get('/page', function () {
-//     return view('home');
-// });
-
 Route::get('/{locale}', function (string $locale) {
-    if(! in_array($locale,['en','jp','vi'])){
+    if (!in_array($locale, ['en', 'jp', 'vi'])) {
         abort(400);
     }
-
-    App::setLocale($locale);
-    return view('homepage');
+    session()->put('locale', $locale);
+    return redirect()->back();
 });
+
+Route::get('/', [HomeController::class, 'index']);

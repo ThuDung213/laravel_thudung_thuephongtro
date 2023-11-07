@@ -136,7 +136,55 @@
                             width="40" height="40" />
                         <p class="mt-2">700k</p>
                     </div>
-                    <button type="button" class="btn btn-success rounded-pill">Be a contributor or sponsor</button>
+                    {{-- <button type="button" class="btn btn-success rounded-pill">Be a contributor or sponsor</button> --}}
+                    <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
+                        style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
+                        Be a contributor or sponsor
+                    </button>
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title text-center" style="text-align: center; color: #198754;">
+                                        TÀI TRỢ
+                                    </h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Nội dung</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="" class="col-form-label">Tên*</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="" class="col-form-label">Mail*</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="" class="col-form-label">Số điện thoại</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="" data-bs-dismiss="modal"
+                                        style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">Gửi</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,8 +243,63 @@
                                         src="./public/icon2445095-1280-12@2x.png" width="40" height="40" />
                                     <p class="mt-2">700k</p>
                                 </div>
-                                <button type="button" class="btn btn-success rounded-pill">Be a contributor or
-                                    sponsor</button>
+                                {{-- <button type="button" class="btn btn-success rounded-pill">Be a contributor or sponsor</button> --}}
+                                <button type="button" class="" data-bs-toggle="modal"
+                                    data-bs-target="#myModal"
+                                    style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
+                                    Be a contributor or sponsor
+                                </button>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title text-center"
+                                                    style="text-align: center; color: #198754;">
+                                                    TÀI TRỢ
+                                                </h4>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="message-text" class="col-form-label">Nội
+                                                            dung</label>
+                                                        <textarea class="form-control" id="message-text"></textarea>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="" class="col-form-label">Tên*</label>
+                                                        <input type="text" class="form-control"
+                                                            id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="" class="col-form-label">Mail*</label>
+                                                        <input type="text" class="form-control"
+                                                            id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="" class="col-form-label">Số điện
+                                                            thoại</label>
+                                                        <input type="text" class="form-control"
+                                                            id="recipient-name">
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="" data-bs-dismiss="modal"
+                                                    style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">Gửi</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -246,8 +349,63 @@
                                         src="./public/icon2445095-1280-12@2x.png" width="40" height="40" />
                                     <p class="mt-2">700k</p>
                                 </div>
-                                <button type="button" class="btn btn-success rounded-pill">Be a contributor or
-                                    sponsor</button>
+                                {{-- <button type="button" class="btn btn-success rounded-pill">Be a contributor or sponsor</button> --}}
+                                <button type="button" class="" data-bs-toggle="modal"
+                                    data-bs-target="#myModal"
+                                    style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
+                                    Be a contributor or sponsor
+                                </button>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title text-center"
+                                                    style="text-align: center; color: #198754;">
+                                                    TÀI TRỢ
+                                                </h4>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="message-text" class="col-form-label">Nội
+                                                            dung</label>
+                                                        <textarea class="form-control" id="message-text"></textarea>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="" class="col-form-label">Tên*</label>
+                                                        <input type="text" class="form-control"
+                                                            id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="" class="col-form-label">Mail*</label>
+                                                        <input type="text" class="form-control"
+                                                            id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="" class="col-form-label">Số điện
+                                                            thoại</label>
+                                                        <input type="text" class="form-control"
+                                                            id="recipient-name">
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="" data-bs-dismiss="modal"
+                                                    style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">Gửi</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -271,60 +429,66 @@
                 </div>
                 <div class="inner-part">
                     <label for="tapImg" class="img">
-                            <iframe class="img-1"
-                            src="https://www.youtube.com/embed/TKpN7cVX7y8?si=KANkoCAeu7xDvyry" title="YouTube video player"
-                            frameborder="0"
+                        <iframe class="img-1" src="https://www.youtube.com/embed/TKpN7cVX7y8?si=KANkoCAeu7xDvyry"
+                            title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </label>
                     <div class="content content-1">
                         <span>Tue, 2023/12/25</span>
                         <div class="title">STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL</div>
-                        <div class="text">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile
-                            Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển
+                        <div class="text">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện
+                            Smile
+                            Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát
+                            triển
                             cụm.
 
-                            Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt
+                            Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng
+                            trọt
                             và chăn nuôi.</div>
                         <button>Read more</button>
                     </div>
                 </div>
                 <div class="inner-part">
                     <label for="tapImg" class="img">
-                            <iframe class="img-2"
-                            src="https://www.youtube.com/embed/TKpN7cVX7y8?si=KANkoCAeu7xDvyry" title="YouTube video player"
-                            frameborder="0"
+                        <iframe class="img-2" src="https://www.youtube.com/embed/TKpN7cVX7y8?si=KANkoCAeu7xDvyry"
+                            title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </label>
                     <div class="content content-2">
                         <span>Tue, 2023/12/25</span>
                         <div class="title">STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL</div>
-                        <div class="text">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile
-                            Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển
+                        <div class="text">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện
+                            Smile
+                            Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát
+                            triển
                             cụm.
 
-                            Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt
+                            Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng
+                            trọt
                             và chăn nuôi.</div>
                         <button>Read more</button>
                     </div>
                 </div>
                 <div class="inner-part">
                     <label for="tapImg" class="img">
-                            <iframe class="img-3"
-                            src="https://www.youtube.com/embed/TKpN7cVX7y8?si=KANkoCAeu7xDvyry" title="YouTube video player"
-                            frameborder="0"
+                        <iframe class="img-3" src="https://www.youtube.com/embed/TKpN7cVX7y8?si=KANkoCAeu7xDvyry"
+                            title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </label>
                     <div class="content content-3">
                         <span>Tue, 2023/12/25</span>
                         <div class="title">STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL</div>
-                        <div class="text">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile
-                            Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển
+                        <div class="text">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện
+                            Smile
+                            Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát
+                            triển
                             cụm.
 
-                            Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt
+                            Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng
+                            trọt
                             và chăn nuôi.</div>
                         <button>Read more</button>
                     </div>

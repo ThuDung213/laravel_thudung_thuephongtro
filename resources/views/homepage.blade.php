@@ -19,6 +19,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+     <style>
+            table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #0d0c0c;
+            border: 1px solid #198754; /* Thêm border cho mỗi ô */
+        }
+        
+        
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 
 <body>
@@ -504,7 +522,211 @@
 
 
     {{-- Contributors --}}
+{{-- Contributors --}}
+    <<section class="section" id="section_1285404068">
+		<div class="bg section-bg fill bg-fill bg-loaded">
 
+			
+			
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+<span class="scroll-to" data-label="Scroll to: #contributor" data-bullet="false" data-link="#contributor" data-title="Contributors"><a name="contributor"></a></span>
+<div class="row" id="row-202264764">
+
+	<div id="col-1806347160" class="col small-12 large-12">
+				<div class="col-inner">
+			
+			
+<div class="container section-title-container"><h1 class="section-title section-title-center"><b></b><span class="section-title-main" style="font-size:120%;color:rgb(0, 0, 0);">NHỮNG NGƯỜI ĐÓNG GÓP</span><b></b></h1></div>
+<h2><span style="color: #000000;"><b>Founder</b></span></h2>
+<div class="row align-middle" id="row-1069529150">
+
+	<div id="col-794226324" class="col medium-6 small-12 large-6">
+				<div class="col-inner">
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1332416647">
+								<div class="img-inner dark" style="margin-left: 100px">
+			<img width="398" height="529" src="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg" class="attachment-large size-large wvs-archive-product-image lazyautosizes ls-is-cached lazyloaded" alt="" decoding="async" data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg" data-srcset="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg 398w, https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276-301x400.jpg 301w" data-sizes="auto" sizes="555px" srcset="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg 398w, https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276-301x400.jpg 301w"><noscript><img width="398" height="529" src="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg" class="attachment-large size-large wvs-archive-product-image" alt="" decoding="async" srcset="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg 398w, https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276-301x400.jpg 301w" sizes="(max-width: 398px) 100vw, 398px" data-eio="l" /></noscript>						
+					</div>
+								
+<style>
+#image_1332416647 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-271484070" class="col medium-6 small-12 large-6">
+				<div class="col-inner" style="margin-right: 100px">
+			
+			
+	<div id="text-4198860867" class="text">
+		
+<p style="text-align: left;"><span style="font-size: 150%;"><strong><span style="color: #000000;">Đinh Thị Đông Phương</span></strong></span><br>
+<span style="font-size: 85%;"><em><span style="color: #000000;">PHD. chuyên ngành công nghệ thông tin, Nhật Bản</span></em></span><br>
+<span style="font-size: 85%;"><em><span style="color: #000000;">BA chuyên ngành sư phạm toán tin, tâm lý, giáo dục</span></em></span></p>
+<p style="text-indent: 30px;"><span style="color: #000000; font-size: 90%;">Tôi được sinh ra và lớn lên ở 1 vùng quê tỉnh Quảng Nam. Tuổi thơ của tôi đầy ắp những trải nghiệm với tự nhiên và đầy tình yêu thương. Tôi và đám bạn trẻ con chơi đủ thứ trò, nào là trốn tìm, bắn trổng, bắn bi, chơi kèn lá, chơi ô quan, nhảy dây, đan lờ bắt cá bắt cua, leo cây hái trái, vào hang bắt dơi, etc. Bố tôi là giáo viên nhưng ông cũng là nông dân rất giỏi. Ngoài giờ làm việc, ông làm đủ thứ. Vỡ đất trồng lúa, chăn nuôi, nấu rượu, làm bún, làm mì, cắt tóc, sửa xe, làm nhà, etc. Mẹ tôi cũng là giáo viên, và bà cũng làm đủ thứ ngoài giờ. Bà làm thuốc nam, dạy thêm, buôn bán, etc. Bố mẹ tôi luôn hỗ trơ nhau khi làm việc. Tôi theo chân bố, chân mẹ trong hầu hết các công việc của ông bà nên tôi được trải nghiệm và học hỏi rất nhiều điều thú vị.</span></p>
+<p style="text-indent: 30px;"><span style="color: #000000; font-size: 90%;">Tôi vào đại học, đi làm, rồi đi du học và làm việc ở Nhật từ năm 2026 đến 2020. Tôi đã tham gia rất nhiều các hoạt động thực tế ở Nhật, từ trồng lúa trồng khoai trồng rau nấu ăn làm bánh nướng thịt cắm trại ngoài trời diễn tập phòng cháy chữa cháy, etc đến làm quản lý dự án IT, làm tiến sĩ, làm giảng viên của đại học Ritsumeikan. Những người bạn vừa có kỹ năng cao trong lĩnh vực họ yêu thích, có kỹ năng xử lý vấn đề rất nhạy bén, và đầy tình yêu thương. Tình yêu thương của người thân, bạn bè giúp tôi phát triển trí tuệ, chữa lành những tổn thương, và trưởng thành qua các trải nghiệm thực tế. Tôi được chữa lành, trở nên tự tin lạc quan yêu đời yêu người, yêu cuộc sống này vô cùng.</span></p>
+<p style="text-indent: 30px;"><span style="color: #000000; font-size: 90%;">Tôi hiểu ra rằng, mỗi khi tôi tham gia hoạt động gì đó để giúp đỡ người khác, tôi không những phát triển trí tuệ và còn được chữa lành. Tình yêu thương trong tôi lớn thêm. Tôi thêm yêu con người và yêu cuộc sống này. Đây quả thực là điều kì diệu. Càng giúp người, chúng ta càng phát triển trí tuệ và càng hạnh phúc hơn. Hãy tham gia dự án để trải nghiệm những điều kỳ diệu này với chúng tôi.</span></p>
+		
+<style>
+#text-4198860867 {
+  text-align: left;
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+</div>
+		</div>
+					</div>
+
+	
+</div>
+		</div>
+
+		
+<style>
+#section_1285404068 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(215, 251, 232);
+}
+#section_1285404068 .ux-shape-divider--top svg {
+  height: 150px;
+  --divider-top-width: 100%;
+}
+#section_1285404068 .ux-shape-divider--bottom svg {
+  height: 150px;
+  --divider-width: 100%;
+}
+</style>
+</section>
+<section class="section" id="section_523525734">
+    <div class="bg section-bg fill bg-fill bg-loaded">
+
+        
+        
+        
+
+    </div>
+
+    
+
+    <div class="section-content relative">
+        
+<div class="container section-title-container"><h1 class="section-title section-title-center"><b></b><span class="section-title-main" style="font-size:150%;color:rgb(0, 0, 0);">Q&amp;A</span><b></b></h1></div>
+<span class="scroll-to" data-label="Scroll to: #qas" data-bullet="false" data-link="#qas" data-title="QAs"><a name="qas"></a></span>
+<div class="row" id="row-303443696">
+
+<div id="col-375192784" class="col small-12 large-12">
+            <div class="col-inner">
+        
+        
+<div id="text-1357899619" class="text hide-for-small">
+    
+<table>
+<tbody>
+<tr>
+<td><span style="color: #000000;"><strong>1.</strong></span></td>
+<td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span style="font-weight: 400; color: #000000;">Nếu chúng ta phát triển được một ngôi làng, thì chúng ta cũng cũng sẽ tìm ra cách phát triển những ngôi làng khác. Do vậy tôi thấy rất thú vị và muốn hiểu hơn về các chương trình cụ thể của dự án, từ đó tôi có thể sắp xếp để tham gia một vài chương trình nào đó.</span></td>
+<td><span style="color: #000000;"><strong>A.</strong></span> <span style="font-weight: 400; color: #000000;">Cảm ơn bạn.</span> <span style="font-weight: 400; color: #000000;">Đúng vậy, dự án có nhiều chương trình. Về cơ bản đó là các chương trình đào tạo bằng làm và học thực tế:</span><p></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400; color: #000000;">Phát triển nông nghiệp bền vững, bảo vệ môi trường</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400; color: #000000;">Phát triển kỹ năng sống cho trẻ em</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400; color: #000000;">Nâng cao kỹ năng làm nghề, làm sản phẩm, dịch vụ</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400; color: #000000;">Phát triển kỹ năng làm kinh doanh</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400; color: #000000;">Phát triển kỹ năng giao tiếp và ngoại ngữ</span></li>
+</ul>
+<p><span style="color: #000000;"><span style="font-weight: 400;">Hãy gọi 0962 414 125 hoặc email </span><a style="color: #000000;" href="mailto:dinhdongphuong@gmail.com"><span style="font-weight: 400;">dinhdongphuong@gmail.com</span></a><span style="font-weight: 400;"> để bạn nắm rõ&nbsp; và đăng ký tham gia bạn nhé.&nbsp;</span></span></p></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #000000;"><strong>2.</strong></span></td>
+<td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span style="font-weight: 400; color: #000000;">Nếu tôi tham gia, thì tôi sẽ ở đâu, và ăn uống thế nào?</span></td>
+<td><span style="color: #000000;"><b>A.</b></span> <span style="font-weight: 400; color: #000000;">Tùy vào chương trình cụ thể. Nếu chương trình yêu cầu tham gia đào tạo thực tế tại ngôi làm thì chúng ta sẽ ở lại trong làng. Ban tổ chức sẽ sắp xếp cho bạn.&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;"><span style="color: #000000;"><strong>3.</strong></span></p>
+</td>
+<td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span style="font-weight: 400; color: #000000;">Tôi muốn đóng góp một số ý kiến cho dự án. Tôi liên lạc với ai?</span></td>
+<td><span style="color: #000000;"><b>A.</b></span> <span style="color: #000000;"><span style="font-weight: 400;">Cảm ơn&nbsp; những ý kiến đóng góp chân thành của bạn. Bạn gọi 0962 414 125 hoặc email </span><a style="color: #000000;" href="mailto:dinhdongphuong@gmail.com"><span style="font-weight: 400;">dinhdongphuong@gmail.com</span></a><span style="font-weight: 400;"> cho Phương nhé.</span></span></td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;"><span style="color: #000000;"><b>4.</b></span></p>
+</td>
+<td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span style="font-weight: 400; color: #000000;">Tôi muốn đứng ra vận động quyên góp cho dự án. Tôi liên lạc ai?</span></td>
+<td><span style="color: #000000;"><b>A.</b></span> <span style="color: #000000;"><span style="font-weight: 400;">Cảm ơn sự hỗ trợ và cộng tác chân thành của bạn. Bạn gọi 0962 414 125 hoặc email </span><a style="color: #000000;" href="mailto:dinhdongphuong@gmail.com"><span style="font-weight: 400;">dinhdongphuong@gmail.com</span></a><span style="font-weight: 400;"> cho Phương để nắm rõ hơn về dự án nhé.&nbsp;</span></span></td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;"><span style="color: #000000;"><b>5.</b></span></p>
+</td>
+<td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span style="font-weight: 400; color: #000000;">Dự án có nhận sự tài trợ bằng tiền không?&nbsp;</span></td>
+<td>
+<p><span style="color: #000000;"><b>A.</b></span> <span style="font-weight: 400; color: #000000;">Mỗi chương trình của dự án có nội dung chi tiết được đăng ở website. Nếu là chương trình cần sự hỗ trợ về tài chính, bạn hỗ trợ bằng cách chuyển khoản đến tài khoản của chức Smile Eye Charity. </span></p>
+<p><span style="font-weight: 400; color: #000000;">Số tài khoản:</span></p>
+<ul>
+<li><span style="color: #000000;">MB bank, 020166669999, Smile Eye Charity</span></li>
+<li><span style="color: #000000;">Techcombank, 22296699, Smile Eye Charity</span></li>
+</ul>
+<p><span style="font-weight: 400; color: #000000;">Chúng tôi sẽ liên lạc lại cho bạn ngay sau khi xác nhận sự hỗ trợ của bạn.&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+    
+
+    
+<style>
+#text-2271907822 {
+color: rgb(0,0,0);
+}
+#text-2271907822 > * {
+color: rgb(0,0,0);
+}
+</style>
+</div>
+
+    </div>
+                </div>
+
+
+</div>
+    </div>
+
+    
+<style>
+#section_523525734 {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+#section_523525734 .ux-shape-divider--top svg {
+height: 150px;
+--divider-top-width: 100%;
+}
+#section_523525734 .ux-shape-divider--bottom svg {
+height: 150px;
+--divider-width: 100%;
+}
+</style>
+</section>
     <!-- Footer -->
     <footer class=" mt-4 text-center text-lg-start bg-footer">
         <!-- Section: Social media -->

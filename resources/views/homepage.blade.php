@@ -32,8 +32,7 @@
             <div class="collapse navbar-collapse justify-content-end ms-1">
                 <a href="#" target="_blank"><img class="insta-icon" alt="" src="./public/insta.svg" /></a>
                 <a href="#" target="_blank"><img class="fb-icon" alt="" src="./public/fb.svg" /></a>
-                <a href="#" target="_blank"><img class="twiter-icon" alt=""
-                        src="./public/twiter.svg" /></a>
+                <a href="#" target="_blank"><img class="twiter-icon" alt="" src="./public/twiter.svg" /></a>
             </div>
         </div>
     </div> --}}
@@ -67,22 +66,53 @@
                         <li class="nav-item pl-2 dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img width="20" height="20" class="flag-of-north-vietnam-194519-icon"
-                                    alt="" src="./public/flag-of-north-vietnam-19451955-1@2x.png" />
-                                Vietnam
+                                @if(session()->has('locale'))
+                                @switch(session()->get('locale'))
+                                @case('vi')
+                                <img width="20" height="20" class="flag-icon-vietnam" alt=""
+                                    src="./public/flag-of-north-vietnam-19451955-1@2x.png" />
+                                Tiếng Việt
+                                @break
+                                @case('en')
+                                <img width="20" height="20" class="flag-icon-english" alt=""
+                                    src="./public/download-5@2x.png" />
+                                English
+                                @break
+                                @case('jp')
+                                <img width="20" height="20" class="flag-icon-japanese" alt=""
+                                    src="./public/download-6@2x.png" />
+                                日本語
+                                @break
+                                @case('fr')
+                                <img width="20" height="20" class="flag-icon-french" alt=""
+                                    src="./public/download (1).png" />
+                                Français
+                                @break
+                                @default
+                                <img width="20" height="20" class="flag-icon-unknown" alt=""
+                                    src="/path/to/unknown-flag.png" />
+                                Unknown Language
+                                @endswitch
+                                @else
+                                <img width="20" height="20" class="flag-icon-unknown" alt=""
+                                    src="/path/to/unknown-flag.png" />
+                                Unknown Language
+                                @endif
                             </a>
+
                             <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item" href="{{ url('/vi') }}"><img src="" alt="Flag 1"
-                                            width="20" height="20"
-                                            class="d-inline-block align-text-top me-1">Tiếng Việt</a></li>
-                                <li><a class="dropdown-item" href="{{ url('/en') }}"><img src="" alt="Flag 2"
-                                            width="20" height="20"
+                                <li><a class="dropdown-item" href="{{ url('/vi') }}"><img
+                                            src="./public/flag-of-north-vietnam-19451955-1@2x.png" alt="Flag 1"
+                                            width="20" height="20" class="d-inline-block align-text-top me-1">Tiếng
+                                        Việt</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/en') }}"><img
+                                            src="./public/download-5@2x.png" alt="Flag 2" width="20" height="20"
                                             class="d-inline-block align-text-top me-1">English</a></li>
-                                <li><a class="dropdown-item" href="{{ url('/jp') }}"><img src="" alt="Flag 3"
-                                            width="20" height="20"
+                                <li><a class="dropdown-item" href="{{ url('/jp') }}"><img
+                                            src="./public/download-6@2x.png" alt="Flag 3" width="20" height="20"
                                             class="d-inline-block align-text-top me-1">日本語</a></li>
-                                <li><a class="dropdown-item" href="{{ url('/fr') }}"><img src="" alt="Flag 3"
-                                            width="20" height="20"
+                                <li><a class="dropdown-item" href="{{ url('/fr') }}"><img
+                                            src="./public/download (1).png" alt="Flag 4" width="20" height="20"
                                             class="d-inline-block align-text-top me-1">French</a></li>
                             </ul>
                         </li>
@@ -102,22 +132,30 @@
                     allowfullscreen></iframe>
             </div>
             <div class="col-md-4 board-content">
-                <h3>{{__('homepage.PROJECT TO SUPPORT BUILDING A LIVESTOCK AND GARDEN MODEL IN CO-TU PEOPLE VILLAGE')}}</h3>
+                <h3>{{__('homepage.PROJECT TO SUPPORT BUILDING A LIVESTOCK AND GARDEN MODEL IN CO-TU PEOPLE VILLAGE')}}
+                </h3>
                 <div class="d-flex justify-content-between">
                     <div class="time">{{__('homepage.Time: 11/2023 - 11/2028')}}</div>
                     <a class="">
-                        <img class="pngimg-3-icon" alt="" src="{{ asset('public/pngimg-3@2x.png') }}" width="30" height="30" />
+                        <img class="pngimg-3-icon" alt="" src="{{ asset('public/pngimg-3@2x.png') }}" width="30"
+                            height="30" />
                     </a>
                 </div>
-            
-                <p>{{__('homepage.Pa Cang Village of Co-Tu residents now receive electricity and water. Many of the families have by habit grown crops and raised livestock for decades...')}}</p>
+
+                <p>{{__('homepage.Pa Cang Village of Co-Tu residents now receive electricity and water. Many of the
+                    families have by habit grown crops and raised livestock for decades...')}}</p>
                 <div class="board-file">
-                    <a class="icon-link icon-link-hover px-4" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://drive.google.com/file/d/1FOtMgIyNB5_v_9YwaIHJsc_rpV9LPJtR/view?usp=sharing">
-                        <img class="cab7b7832b72fff018dcb404a62828-icon" alt="" src="{{ asset('public/cab7b7832b72fff018dcb404a6282846-3@2x.png') }}" width="20" height="20" />
+                    <a class="icon-link icon-link-hover px-4"
+                        style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);"
+                        href="https://drive.google.com/file/d/1FOtMgIyNB5_v_9YwaIHJsc_rpV9LPJtR/view?usp=sharing">
+                        <img class="cab7b7832b72fff018dcb404a62828-icon" alt=""
+                            src="{{ asset('public/cab7b7832b72fff018dcb404a6282846-3@2x.png') }}" width="20"
+                            height="20" />
                         {{__('homepage.Plan file')}}
                     </a>
                     <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
-                        <img class="cfe32d067a-3-icon" alt="" src="{{ asset('public/690cfe32d067a-3@2x.png') }}" width="20" height="20" />
+                        <img class="cfe32d067a-3-icon" alt="" src="{{ asset('public/690cfe32d067a-3@2x.png') }}"
+                            width="20" height="20" />
                         {{__('homepage.Pitch file')}}
                     </a>
                 </div>
@@ -127,10 +165,12 @@
                 </div>
                 <div class="d-flex justify-content-between mt-4">
                     <div class="d-flex justify-content-left">
-                        <img class="icon-2445095-1280-12" alt="" src="{{ asset('public/icon2445095-1280-12@2x.png') }}" width="40" height="40" />
+                        <img class="icon-2445095-1280-12" alt="" src="{{ asset('public/icon2445095-1280-12@2x.png') }}"
+                            width="40" height="40" />
                         <p class="mt-2">700k</p>
                     </div>
-                    <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal" style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
+                    <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
+                        style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
                         {{__('homepage.Be a contributor or sponsor')}}
                     </button>
                     <!-- The Modal -->
@@ -148,7 +188,8 @@
                                 <div class="modal-body">
                                     <form>
                                         <div class="mb-3">
-                                            <label for="message-text" class="col-form-label">{{__('homepage.Nội dung')}}</label>
+                                            <label for="message-text" class="col-form-label">{{__('homepage.Nội
+                                                dung')}}</label>
                                             <textarea class="form-control" id="message-text"></textarea>
                                         </div>
                                         <div class="mb-3">
@@ -160,27 +201,29 @@
                                             <input type="text" class="form-control" id="recipient-name">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="" class="col-form-label">{{__('homepage.Số điện thoại')}}</label>
+                                            <label for="" class="col-form-label">{{__('homepage.Số điện
+                                                thoại')}}</label>
                                             <input type="text" class="form-control" id="recipient-name">
                                         </div>
                                     </form>
                                 </div>
                                 <!-- Modal footer -->
                                 <div class="modal-footer">
-                                    <button type="button" class="" data-bs-dismiss="modal" style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">{{__('homepage.Gửi')}}</button>
+                                    <button type="button" class="" data-bs-dismiss="modal"
+                                        style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">{{__('homepage.Gửi')}}</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
     {{-- specific programs --}}
     <div class="program mt-5">
         <h1 class="text-center">{{__('homepage.SPECIFIC PROGRAMS')}}</h1>
-    
+
         {{-- upcoming program --}}
         <div class="">
             <h2>{{__('homepage.UPCOMING PROGRAMS')}}</h2>
@@ -201,16 +244,20 @@
                                         width="30" height="30" />
                                 </a>
                             </div>
-    
-                            <p>{{__('homepage.It has survived not only five centuries, but also the leap into electronic typesetting, remaining when an unknown printer took a galley of type and scrambled it to make a type specimen book. essentially.')}}</p>
+
+                            <p>{{__('homepage.It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining when an unknown printer took a galley of type and scrambled it to
+                                make a type specimen book. essentially.')}}</p>
                             <div class="board-file">
-                                <a class="icon-link icon-link-hover px-4" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                                <a class="icon-link icon-link-hover px-4"
+                                    style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
                                     <img class="cab7b7832b72fff018dcb404a62828-icon" alt=""
                                         src="{{ asset('public/cab7b7832b72fff018dcb404a6282846-3@2x.png') }}" width="20"
                                         height="20" />
                                     {{__('homepage.Plan file')}}
                                 </a>
-                                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                                <a class="icon-link icon-link-hover"
+                                    style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
                                     <img class="cfe32d067a-3-icon" alt=""
                                         src="{{ asset('public/690cfe32d067a-3@2x.png') }}" width="20" height="20" />
                                     {{__('homepage.Pitch file')}}
@@ -227,8 +274,7 @@
                                         src="{{ asset('public/icon2445095-1280-12@2x.png') }}" width="40" height="40" />
                                     <p class="mt-2">700k</p>
                                 </div>
-                                <button type="button" class="" data-bs-toggle="modal"
-                                    data-bs-target="#myModal"
+                                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
                                     style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
                                     {{__('homepage.Be a contributor or sponsor')}}
                                 </button>
@@ -249,23 +295,24 @@
                                             <div class="modal-body">
                                                 <form>
                                                     <div class="mb-3">
-                                                        <label for="message-text" class="col-form-label">{{__('homepage.Nội dung')}}</label>
+                                                        <label for="message-text"
+                                                            class="col-form-label">{{__('homepage.Nội dung')}}</label>
                                                         <textarea class="form-control" id="message-text"></textarea>
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">{{__('homepage.Tên*')}}</label>
-                                                        <input type="text" class="form-control"
-                                                            id="recipient-name">
+                                                        <label for=""
+                                                            class="col-form-label">{{__('homepage.Tên*')}}</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">{{__('homepage.Mail*')}}</label>
-                                                        <input type="text" class="form-control"
-                                                            id="recipient-name">
+                                                        <label for=""
+                                                            class="col-form-label">{{__('homepage.Mail*')}}</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">{{__('homepage.Số điện thoại')}}</label>
-                                                        <input type="text" class="form-control"
-                                                            id="recipient-name">
+                                                        <label for="" class="col-form-label">{{__('homepage.Số điện
+                                                            thoại')}}</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
                                                     </div>
                                                 </form>
                                             </div>
@@ -295,34 +342,37 @@
                                         width="30" height="30" />
                                 </a>
                             </div>
-    
-                            <p>{{__('homepage.It has survived not only five centuries, but also the leap into electronic typesetting, remaining when an unknown printer took a galley of type and scrambled it to make a type specimen book. essentially.')}}</p>
+
+                            <p>{{__('homepage.It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining when an unknown printer took a galley of type and scrambled it to
+                                make a type specimen book. essentially.')}}</p>
                             <div class="board-file">
-                                <a class="icon-link icon-link-hover px-4" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                                <a class="icon-link icon-link-hover px-4"
+                                    style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
                                     <img class="cab7b7832b72fff018dcb404a62828-icon" alt=""
                                         src="{{ asset('public/cab7b7832b72fff018dcb404a6282846-3@2x.png') }}" width="20"
                                         height="20" />
                                     {{__('homepage.Plan file')}}
                                 </a>
-                                <a class ="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                                <a class="icon-link icon-link-hover"
+                                    style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
                                     <img class="cfe32d067a-3-icon" alt=""
                                         src="{{ asset('public/690cfe32d067a-3@2x.png') }}" width="20" height="20" />
                                     {{__('homepage.Pitch file')}}
                                 </a>
                             </div>
-                            <div class= "pg-bar">
+                            <div class="pg-bar">
                                 <p>{{__('homepage.Progress')}}</p>
-                                <img class ="chart-icon" alt="" src="{{ asset('public/chart2.svg') }}" width="400"
+                                <img class="chart-icon" alt="" src="{{ asset('public/chart2.svg') }}" width="400"
                                     height="6" />
                             </div>
                             <div class="d-flex justify-content-between mt-4">
                                 <div class="d-flex justify-content-left">
-                                    <img class= "icon-2445095-1280-12" alt=""
+                                    <img class="icon-2445095-1280-12" alt=""
                                         src="{{ asset('public/icon2445095-1280-12@2x.png') }}" width="40" height="40" />
                                     <p class="mt-2">700k</p>
                                 </div>
-                                <button type="button" class="" data-bs-toggle="modal"
-                                    data-bs-target="#myModal"
+                                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
                                     style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
                                     {{__('homepage.Be a contributor or sponsor')}}
                                 </button>
@@ -343,23 +393,24 @@
                                             <div class="modal-body">
                                                 <form>
                                                     <div class="mb-3">
-                                                        <label for="message-text" class="col-form-label">{{__('homepage.Nội dung')}}</label>
+                                                        <label for="message-text"
+                                                            class="col-form-label">{{__('homepage.Nội dung')}}</label>
                                                         <textarea class="form-control" id="message-text"></textarea>
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">{{__('homepage.Tên*')}}</label>
-                                                        <input type="text" class="form-control"
-                                                            id="recipient-name">
+                                                        <label for=""
+                                                            class="col-form-label">{{__('homepage.Tên*')}}</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">{{__('homepage.Mail*')}}</label>
-                                                        <input type="text" class="form-control"
-                                                            id="recipient-name">
+                                                        <label for=""
+                                                            class="col-form-label">{{__('homepage.Mail*')}}</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">{{__('homepage.Số điện thoại')}}</label>
-                                                        <input type="text" class="form-control"
-                                                            id="recipient-name">
+                                                        <label for="" class="col-form-label">{{__('homepage.Số điện
+                                                            thoại')}}</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
                                                     </div>
                                                 </form>
                                             </div>
@@ -378,7 +429,7 @@
             </div>
         </div>
     </div>
-    
+
     {{-- Blog --}}
     <div class="blog mt-5 justify-content-center">
         <h1 class="text-center">{{__('homepage.NEWS')}}</h1>
@@ -402,8 +453,12 @@
                     </label>
                     <div class="content content-1">
                         <span>{{__('homepage.Tue, 2023/12/25')}}</span>
-                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL')}}</div>
-                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
+                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC
+                            MODEL')}}</div>
+                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư,
+                            và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với
+                            người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn
+                            nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
                         <button>{{__('homepage.Read more')}}</button>
                     </div>
                 </div>
@@ -416,8 +471,12 @@
                     </label>
                     <div class="content content-2">
                         <span>{{__('homepage.Tue, 2023/12/25')}}</span>
-                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL')}}</div>
-                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
+                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC
+                            MODEL')}}</div>
+                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư,
+                            và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với
+                            người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn
+                            nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
                         <button>{{__('homepage.Read more')}}</button>
                     </div>
                 </div>
@@ -430,15 +489,19 @@
                     </label>
                     <div class="content content-3">
                         <span>{{__('homepage.Tue, 2023/12/25')}}</span>
-                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL')}}</div>
-                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
+                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC
+                            MODEL')}}</div>
+                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư,
+                            và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với
+                            người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn
+                            nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
                         <button>{{__('homepage.Read more')}}</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
     {{-- Contributors --}}
 
@@ -483,11 +546,12 @@
                             <i class="fas fa-gem me-3 text-secondary">{{__('homepage.Company name')}}</i>
                         </h6>
                         <p>
-                            {{__('homepage.Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.')}}
+                            {{__('homepage.Here you can use rows and columns to organize your footer content. Lorem
+                            ipsum dolor sit amet, consectetur adipisicing elit.')}}
                         </p>
                     </div>
                     <!-- Grid column -->
-        
+
                     <!-- Grid column -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
@@ -508,7 +572,7 @@
                         </p>
                     </div>
                     <!-- Grid column -->
-        
+
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
@@ -529,7 +593,7 @@
                         </p>
                     </div>
                     <!-- Grid column -->
-        
+
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
@@ -547,7 +611,7 @@
                 <!-- Grid row -->
             </div>
         </section>
-        
+
         <!-- Section: Links  -->
 
         <!-- Copyright -->

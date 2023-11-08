@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\App;
 */
 
 Route::get('/{locale}', function (string $locale) {
-    if (!in_array($locale, ['en', 'jp', 'vi'])) {
+    if (!in_array($locale, ['en', 'jp', 'vi', 'fr'])) {
         abort(400);
     }
     session()->put('locale', $locale);

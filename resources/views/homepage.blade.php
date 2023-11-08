@@ -72,15 +72,18 @@
                                 Vietnam
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item" href="{{ url('/vi') }}"><img src="flag1.png" alt="Flag 1"
+                                <li><a class="dropdown-item" href="{{ url('/vi') }}"><img src="" alt="Flag 1"
                                             width="20" height="20"
                                             class="d-inline-block align-text-top me-1">Tiếng Việt</a></li>
-                                <li><a class="dropdown-item" href="{{ url('/en') }}"><img src="flag2.png" alt="Flag 2"
+                                <li><a class="dropdown-item" href="{{ url('/en') }}"><img src="" alt="Flag 2"
                                             width="20" height="20"
                                             class="d-inline-block align-text-top me-1">English</a></li>
-                                <li><a class="dropdown-item" href="{{ url('/jp') }}"><img src="flag3.png" alt="Flag 3"
+                                <li><a class="dropdown-item" href="{{ url('/jp') }}"><img src="" alt="Flag 3"
                                             width="20" height="20"
                                             class="d-inline-block align-text-top me-1">日本語</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/fr') }}"><img src="" alt="Flag 3"
+                                            width="20" height="20"
+                                            class="d-inline-block align-text-top me-1">French</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -99,102 +102,88 @@
                     allowfullscreen></iframe>
             </div>
             <div class="col-md-4 board-content">
-                <h3>PROJECT TO SUPPORT BUILDING A LIVESTOCK AND GARDEN MODEL IN CO-TU PEOPLE VILLAGE</h3>
+                <h3>{{__('homepage.PROJECT TO SUPPORT BUILDING A LIVESTOCK AND GARDEN MODEL IN CO-TU PEOPLE VILLAGE')}}</h3>
                 <div class="d-flex justify-content-between">
-                    <div class="time">Time: 11/2023 - 11/2028</div>
+                    <div class="time">{{__('homepage.Time: 11/2023 - 11/2028')}}</div>
                     <a class="">
-                        <img class="pngimg-3-icon" alt="" src="./public/pngimg-3@2x.png" width="30"
-                            height="30" />
+                        <img class="pngimg-3-icon" alt="" src="{{ asset('public/pngimg-3@2x.png') }}" width="30" height="30" />
                     </a>
                 </div>
-
-                <p>Pa Cang Village of Co-Tu residents now receive electricity and water. Many of the families have by
-                    habit grown crops and raised livestock for decades... </p>
+            
+                <p>{{__('homepage.Pa Cang Village of Co-Tu residents now receive electricity and water. Many of the families have by habit grown crops and raised livestock for decades...')}}</p>
                 <div class="board-file">
-                    <a class="icon-link icon-link-hover px-4"
-                        style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);"
-                        href="https://drive.google.com/file/d/1FOtMgIyNB5_v_9YwaIHJsc_rpV9LPJtR/view?usp=sharing">
-                        <img class="cab7b7832b72fff018dcb404a62828-icon" alt=""
-                            src="./public/cab7b7832b72fff018dcb404a6282846-3@2x.png" width="20" height="20" />
-                        Plan file
+                    <a class="icon-link icon-link-hover px-4" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://drive.google.com/file/d/1FOtMgIyNB5_v_9YwaIHJsc_rpV9LPJtR/view?usp=sharing">
+                        <img class="cab7b7832b72fff018dcb404a62828-icon" alt="" src="{{ asset('public/cab7b7832b72fff018dcb404a6282846-3@2x.png') }}" width="20" height="20" />
+                        {{__('homepage.Plan file')}}
                     </a>
-                    <a class="icon-link icon-link-hover"
-                        style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
-                        <img class="cfe32d067a-3-icon" alt="" src="./public/690cfe32d067a-3@2x.png"
-                            width="20" height="20" />
-                        Pitch file
+                    <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                        <img class="cfe32d067a-3-icon" alt="" src="{{ asset('public/690cfe32d067a-3@2x.png') }}" width="20" height="20" />
+                        {{__('homepage.Pitch file')}}
                     </a>
                 </div>
                 <div class="pg-bar">
-                    <p>Progress</p>
-                    <img class="chart-icon" alt="" src="./public/chart2.svg" width="350"
-                        height="6" />
+                    <p>{{__('homepage.Progress')}}</p>
+                    <img class="chart-icon" alt="" src="{{ asset('public/chart2.svg') }}" width="350" height="6" />
                 </div>
                 <div class="d-flex justify-content-between mt-4">
                     <div class="d-flex justify-content-left">
-                        <img class="icon-2445095-1280-12" alt="" src="./public/icon2445095-1280-12@2x.png"
-                            width="40" height="40" />
+                        <img class="icon-2445095-1280-12" alt="" src="{{ asset('public/icon2445095-1280-12@2x.png') }}" width="40" height="40" />
                         <p class="mt-2">700k</p>
                     </div>
-                    {{-- <button type="button" class="btn btn-success rounded-pill">Be a contributor or sponsor</button> --}}
-                    <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
-                        style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
-                        Be a contributor or sponsor
+                    <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal" style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
+                        {{__('homepage.Be a contributor or sponsor')}}
                     </button>
                     <!-- The Modal -->
                     <div class="modal" id="myModal">
                         <div class="modal-dialog">
                             <div class="modal-content">
-
                                 <!-- Modal Header -->
                                 <div class="modal-header">
                                     <h4 class="modal-title text-center" style="text-align: center; color: #198754;">
-                                        TÀI TRỢ
+                                        {{__('homepage.TÀI TRỢ')}}
                                     </h4>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                 </div>
-
                                 <!-- Modal body -->
                                 <div class="modal-body">
                                     <form>
                                         <div class="mb-3">
-                                            <label for="message-text" class="col-form-label">Nội dung</label>
+                                            <label for="message-text" class="col-form-label">{{__('homepage.Nội dung')}}</label>
                                             <textarea class="form-control" id="message-text"></textarea>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="" class="col-form-label">Tên*</label>
+                                            <label for="" class="col-form-label">{{__('homepage.Tên*')}}</label>
                                             <input type="text" class="form-control" id="recipient-name">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="" class="col-form-label">Mail*</label>
+                                            <label for="" class="col-form-label">{{__('homepage.Mail*')}}</label>
                                             <input type="text" class="form-control" id="recipient-name">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="" class="col-form-label">Số điện thoại</label>
+                                            <label for="" class="col-form-label">{{__('homepage.Số điện thoại')}}</label>
                                             <input type="text" class="form-control" id="recipient-name">
                                         </div>
                                     </form>
                                 </div>
-
                                 <!-- Modal footer -->
                                 <div class="modal-footer">
-                                    <button type="button" class="" data-bs-dismiss="modal"
-                                        style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">Gửi</button>
+                                    <button type="button" class="" data-bs-dismiss="modal" style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">{{__('homepage.Gửi')}}</button>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     {{-- specific programs --}}
     <div class="program mt-5">
-        <h1 class="text-center">SPECIFIC PROGRAMS</h1>
+        <h1 class="text-center">{{__('homepage.SPECIFIC PROGRAMS')}}</h1>
+    
         {{-- upcoming program --}}
         <div class="">
-            <h2>UPCOMING PROGRAMS</h2>
+            <h2>{{__('homepage.UPCOMING PROGRAMS')}}</h2>
             <div class="overflow-hidden text-left">
                 <div class="row gx-5 justify-content-evenly">
                     <div class="col-5 border border-success rounded ">
@@ -204,99 +193,87 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                         <div class="board-content">
-                            <h3>Dự Án Phát Triển Làng Pà-Ong</h3>
+                            <h3>{{__('homepage.Dự Án Phát Triển Làng Pà-Ong')}}</h3>
                             <div class="d-flex justify-content-between">
-                                <div class="time">Time: 11/2023 - 11/2028</div>
+                                <div class="time">{{__('homepage.Time: 11/2023 - 11/2028')}}</div>
                                 <a class="p-4">
-                                    <img class="pngimg-3-icon" alt="" src="./public/pngimg-3@2x.png"
+                                    <img class="pngimg-3-icon" alt="" src="{{ asset('public/pngimg-3@2x.png') }}"
                                         width="30" height="30" />
                                 </a>
                             </div>
-
-                            <p>It has survived not only five centuries, but also the leap
-                                into electronic typesetting, remaining when an unknown
-                                printer took a galley of type and scrambled it to make a
-                                type specimen book. essentially.</p>
+    
+                            <p>{{__('homepage.It has survived not only five centuries, but also the leap into electronic typesetting, remaining when an unknown printer took a galley of type and scrambled it to make a type specimen book. essentially.')}}</p>
                             <div class="board-file">
-                                <a class="icon-link icon-link-hover px-4"
-                                    style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                                <a class="icon-link icon-link-hover px-4" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
                                     <img class="cab7b7832b72fff018dcb404a62828-icon" alt=""
-                                        src="./public/cab7b7832b72fff018dcb404a6282846-3@2x.png" width="20"
+                                        src="{{ asset('public/cab7b7832b72fff018dcb404a6282846-3@2x.png') }}" width="20"
                                         height="20" />
-                                    Plan file
+                                    {{__('homepage.Plan file')}}
                                 </a>
-                                <a class="icon-link icon-link-hover"
-                                    style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
                                     <img class="cfe32d067a-3-icon" alt=""
-                                        src="./public/690cfe32d067a-3@2x.png" width="20" height="20" />
-                                    Pitch file
+                                        src="{{ asset('public/690cfe32d067a-3@2x.png') }}" width="20" height="20" />
+                                    {{__('homepage.Pitch file')}}
                                 </a>
                             </div>
                             <div class="pg-bar">
-                                <p>Progress</p>
-                                <img class="chart-icon" alt="" src="./public/chart2.svg" width="400"
+                                <p>{{__('homepage.Progress')}}</p>
+                                <img class="chart-icon" alt="" src="{{ asset('public/chart2.svg') }}" width="400"
                                     height="6" />
                             </div>
                             <div class="d-flex justify-content-between mt-4">
                                 <div class="d-flex justify-content-left">
                                     <img class="icon-2445095-1280-12" alt=""
-                                        src="./public/icon2445095-1280-12@2x.png" width="40" height="40" />
+                                        src="{{ asset('public/icon2445095-1280-12@2x.png') }}" width="40" height="40" />
                                     <p class="mt-2">700k</p>
                                 </div>
-                                {{-- <button type="button" class="btn btn-success rounded-pill">Be a contributor or sponsor</button> --}}
                                 <button type="button" class="" data-bs-toggle="modal"
                                     data-bs-target="#myModal"
                                     style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
-                                    Be a contributor or sponsor
+                                    {{__('homepage.Be a contributor or sponsor')}}
                                 </button>
                                 <!-- The Modal -->
                                 <div class="modal" id="myModal">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-
                                             <!-- Modal Header -->
                                             <div class="modal-header">
                                                 <h4 class="modal-title text-center"
                                                     style="text-align: center; color: #198754;">
-                                                    TÀI TRỢ
+                                                    {{__('homepage.TÀI TRỢ')}}
                                                 </h4>
                                                 <button type="button" class="btn-close"
                                                     data-bs-dismiss="modal"></button>
                                             </div>
-
                                             <!-- Modal body -->
                                             <div class="modal-body">
                                                 <form>
                                                     <div class="mb-3">
-                                                        <label for="message-text" class="col-form-label">Nội
-                                                            dung</label>
+                                                        <label for="message-text" class="col-form-label">{{__('homepage.Nội dung')}}</label>
                                                         <textarea class="form-control" id="message-text"></textarea>
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">Tên*</label>
+                                                        <label for="" class="col-form-label">{{__('homepage.Tên*')}}</label>
                                                         <input type="text" class="form-control"
                                                             id="recipient-name">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">Mail*</label>
+                                                        <label for="" class="col-form-label">{{__('homepage.Mail*')}}</label>
                                                         <input type="text" class="form-control"
                                                             id="recipient-name">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">Số điện
-                                                            thoại</label>
+                                                        <label for="" class="col-form-label">{{__('homepage.Số điện thoại')}}</label>
                                                         <input type="text" class="form-control"
                                                             id="recipient-name">
                                                     </div>
                                                 </form>
                                             </div>
-
                                             <!-- Modal footer -->
                                             <div class="modal-footer">
                                                 <button type="button" class="" data-bs-dismiss="modal"
-                                                    style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">Gửi</button>
+                                                    style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">{{__('homepage.Gửi')}}</button>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -310,99 +287,87 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                         <div class="board-content">
-                            <h3>Dự Án Phát Triển Làng Pà-Ong</h3>
+                            <h3>{{__('homepage.Dự Án Phát Triển Làng Pà-Ong')}}</h3>
                             <div class="d-flex justify-content-between">
-                                <div class="time">Time: 11/2023 - 11/2028</div>
+                                <div class="time">{{__('homepage.Time: 11/2023 - 11/2028')}}</div>
                                 <a class="p-4">
-                                    <img class="pngimg-3-icon" alt="" src="./public/pngimg-3@2x.png"
+                                    <img class="pngimg-3-icon" alt="" src="{{ asset('public/pngimg-3@2x.png') }}"
                                         width="30" height="30" />
                                 </a>
                             </div>
-
-                            <p>It has survived not only five centuries, but also the leap
-                                into electronic typesetting, remaining when an unknown
-                                printer took a galley of type and scrambled it to make a
-                                type specimen book. essentially.</p>
+    
+                            <p>{{__('homepage.It has survived not only five centuries, but also the leap into electronic typesetting, remaining when an unknown printer took a galley of type and scrambled it to make a type specimen book. essentially.')}}</p>
                             <div class="board-file">
-                                <a class="icon-link icon-link-hover px-4"
-                                    style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                                <a class="icon-link icon-link-hover px-4" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
                                     <img class="cab7b7832b72fff018dcb404a62828-icon" alt=""
-                                        src="./public/cab7b7832b72fff018dcb404a6282846-3@2x.png" width="20"
+                                        src="{{ asset('public/cab7b7832b72fff018dcb404a6282846-3@2x.png') }}" width="20"
                                         height="20" />
-                                    Plan file
+                                    {{__('homepage.Plan file')}}
                                 </a>
-                                <a class="icon-link icon-link-hover"
-                                    style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                                <a class ="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
                                     <img class="cfe32d067a-3-icon" alt=""
-                                        src="./public/690cfe32d067a-3@2x.png" width="20" height="20" />
-                                    Pitch file
+                                        src="{{ asset('public/690cfe32d067a-3@2x.png') }}" width="20" height="20" />
+                                    {{__('homepage.Pitch file')}}
                                 </a>
                             </div>
-                            <div class="pg-bar">
-                                <p>Progress</p>
-                                <img class="chart-icon" alt="" src="./public/chart2.svg" width="400"
+                            <div class= "pg-bar">
+                                <p>{{__('homepage.Progress')}}</p>
+                                <img class ="chart-icon" alt="" src="{{ asset('public/chart2.svg') }}" width="400"
                                     height="6" />
                             </div>
                             <div class="d-flex justify-content-between mt-4">
                                 <div class="d-flex justify-content-left">
-                                    <img class="icon-2445095-1280-12" alt=""
-                                        src="./public/icon2445095-1280-12@2x.png" width="40" height="40" />
+                                    <img class= "icon-2445095-1280-12" alt=""
+                                        src="{{ asset('public/icon2445095-1280-12@2x.png') }}" width="40" height="40" />
                                     <p class="mt-2">700k</p>
                                 </div>
-                                {{-- <button type="button" class="btn btn-success rounded-pill">Be a contributor or sponsor</button> --}}
                                 <button type="button" class="" data-bs-toggle="modal"
                                     data-bs-target="#myModal"
                                     style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
-                                    Be a contributor or sponsor
+                                    {{__('homepage.Be a contributor or sponsor')}}
                                 </button>
                                 <!-- The Modal -->
                                 <div class="modal" id="myModal">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-
                                             <!-- Modal Header -->
                                             <div class="modal-header">
                                                 <h4 class="modal-title text-center"
                                                     style="text-align: center; color: #198754;">
-                                                    TÀI TRỢ
+                                                    {{__('homepage.TÀI TRỢ')}}
                                                 </h4>
                                                 <button type="button" class="btn-close"
                                                     data-bs-dismiss="modal"></button>
                                             </div>
-
                                             <!-- Modal body -->
                                             <div class="modal-body">
                                                 <form>
                                                     <div class="mb-3">
-                                                        <label for="message-text" class="col-form-label">Nội
-                                                            dung</label>
+                                                        <label for="message-text" class="col-form-label">{{__('homepage.Nội dung')}}</label>
                                                         <textarea class="form-control" id="message-text"></textarea>
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">Tên*</label>
+                                                        <label for="" class="col-form-label">{{__('homepage.Tên*')}}</label>
                                                         <input type="text" class="form-control"
                                                             id="recipient-name">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">Mail*</label>
+                                                        <label for="" class="col-form-label">{{__('homepage.Mail*')}}</label>
                                                         <input type="text" class="form-control"
                                                             id="recipient-name">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="" class="col-form-label">Số điện
-                                                            thoại</label>
+                                                        <label for="" class="col-form-label">{{__('homepage.Số điện thoại')}}</label>
                                                         <input type="text" class="form-control"
                                                             id="recipient-name">
                                                     </div>
                                                 </form>
                                             </div>
-
                                             <!-- Modal footer -->
                                             <div class="modal-footer">
-                                                <button type="button" class="" data-bs-dismiss="modal"
-                                                    style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">Gửi</button>
+                                                <button type="button" class=" " data-bs-dismiss="modal"
+                                                    style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">{{__('homepage.Gửi')}}</button>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -413,9 +378,10 @@
             </div>
         </div>
     </div>
+    
     {{-- Blog --}}
     <div class="blog mt-5 justify-content-center">
-        <h1 class="text-center">NEWS</h1>
+        <h1 class="text-center">{{__('homepage.NEWS')}}</h1>
         <div class="">
             <div class="card blog-card">
                 <input type="radio" name="select" id="tap-1" checked>
@@ -435,18 +401,10 @@
                             allowfullscreen></iframe>
                     </label>
                     <div class="content content-1">
-                        <span>Tue, 2023/12/25</span>
-                        <div class="title">STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL</div>
-                        <div class="text">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện
-                            Smile
-                            Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát
-                            triển
-                            cụm.
-
-                            Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng
-                            trọt
-                            và chăn nuôi.</div>
-                        <button>Read more</button>
+                        <span>{{__('homepage.Tue, 2023/12/25')}}</span>
+                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL')}}</div>
+                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
+                        <button>{{__('homepage.Read more')}}</button>
                     </div>
                 </div>
                 <div class="inner-part">
@@ -457,18 +415,10 @@
                             allowfullscreen></iframe>
                     </label>
                     <div class="content content-2">
-                        <span>Tue, 2023/12/25</span>
-                        <div class="title">STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL</div>
-                        <div class="text">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện
-                            Smile
-                            Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát
-                            triển
-                            cụm.
-
-                            Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng
-                            trọt
-                            và chăn nuôi.</div>
-                        <button>Read more</button>
+                        <span>{{__('homepage.Tue, 2023/12/25')}}</span>
+                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL')}}</div>
+                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
+                        <button>{{__('homepage.Read more')}}</button>
                     </div>
                 </div>
                 <div class="inner-part">
@@ -479,24 +429,16 @@
                             allowfullscreen></iframe>
                     </label>
                     <div class="content content-3">
-                        <span>Tue, 2023/12/25</span>
-                        <div class="title">STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL</div>
-                        <div class="text">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện
-                            Smile
-                            Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát
-                            triển
-                            cụm.
-
-                            Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng
-                            trọt
-                            và chăn nuôi.</div>
-                        <button>Read more</button>
+                        <span>{{__('homepage.Tue, 2023/12/25')}}</span>
+                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC MODEL')}}</div>
+                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
+                        <button>{{__('homepage.Read more')}}</button>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+    
 
     {{-- Contributors --}}
 
@@ -538,74 +480,74 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                            <i class="fas fa-gem me-3 text-secondary">{{__('homepage.Company name')}}</i>
                         </h6>
                         <p>
-                            Here you can use rows and columns to organize your footer content. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit.
+                            {{__('homepage.Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.')}}
                         </p>
                     </div>
                     <!-- Grid column -->
-
+        
                     <!-- Grid column -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            Products
+                            {{__('homepage.Products')}}
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Angular</a>
+                            <a href="#!" class="text-reset">{{__('homepage.Angular')}}</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">React</a>
+                            <a href="#!" class="text-reset">{{__('homepage.React')}}</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Vue</a>
+                            <a href="#!" class="text-reset">{{__('homepage.Vue')}}</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Laravel</a>
+                            <a href="#!" class="text-reset">{{__('homepage.Laravel')}}</a>
                         </p>
                     </div>
                     <!-- Grid column -->
-
+        
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            Useful links
+                            {{__('homepage.Useful links')}}
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Pricing</a>
+                            <a href="#!" class="text-reset">{{__('homepage.Pricing')}}</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Settings</a>
+                            <a href="#!" class="text-reset">{{__('homepage.Settings')}}</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Orders</a>
+                            <a href="#!" class="text-reset">{{__('homepage.Orders')}}</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Help</a>
+                            <a href="#!" class="text-reset">{{__('homepage.Help')}}</a>
                         </p>
                     </div>
                     <!-- Grid column -->
-
+        
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+                        <h6 class="text-uppercase fw-bold mb-4">{{__('homepage.Contact')}}</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> {{__('homepage.New York, NY 10012, US')}}</p>
                         <p>
                             <i class="fas fa-envelope me-3 text-secondary"></i>
-                            info@example.com
+                            {{__('homepage.info@example.com')}}
                         </p>
-                        <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i> {{__('homepage.+ 01 234 567 88')}}</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i> {{__('homepage.+ 01 234 567 89')}}</p>
                     </div>
                     <!-- Grid column -->
                 </div>
                 <!-- Grid row -->
             </div>
         </section>
+        
         <!-- Section: Links  -->
 
         <!-- Copyright -->

@@ -287,11 +287,18 @@
                                     height="6" />
                             </div>
                             <div class="d-flex justify-content-between mt-4">
-                                <div class="d-flex justify-content-left">
-                                    <img class="icon-2445095-1280-12" alt=""
-                                        src="{{ asset('public/icon2445095-1280-12@2x.png') }}" width="40" height="40" />
-                                    <p class="mt-2">700k</p>
-                                </div>
+                                 <div class="d-flex justify-content-left">
+                        <img id="myImage" class="icon-2445095-1280-12" alt="" src="./public/icon2445095-1280-12@2x.png" width="40" height="40" onclick="increaseValue()" />
+                        <p id="myValue" class="mt-2">700</p>
+                    </div>
+                    
+                    <script>
+                        function increaseValue() {
+                            var valueElement = document.getElementById("myValue");
+                            var currentValue = parseInt(valueElement.innerHTML);
+                            valueElement.innerHTML = currentValue + 1;
+                        }
+                    </script>
                                 <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
                                     style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
                                     {{__('homepage.Be a contributor or sponsor')}}
@@ -385,11 +392,27 @@
                                     height="6" />
                             </div>
                             <div class="d-flex justify-content-between mt-4">
-                                <div class="d-flex justify-content-left">
-                                    <img class="icon-2445095-1280-12" alt=""
-                                        src="{{ asset('public/icon2445095-1280-12@2x.png') }}" width="40" height="40" />
-                                    <p class="mt-2">700k</p>
-                                </div>
+                                   <div class="d-flex justify-content-left">
+                        <img id="myImage" class="icon-2445095-1280-12" alt="" src="./public/icon2445095-1280-12@2x.png" width="40" height="40" onclick="increaseValue()" />
+                        <p id="myValue" class="mt-2">700</p>
+                    </div>
+                    
+                    <script>
+                        function increaseValue() {
+                            var valueElement = document.getElementById("myValue");
+                            var currentValue = parseInt(valueElement.innerHTML);
+                            valueElement.innerHTML = currentValue + 1;
+                        }
+                    </script>
+                    </div>
+                    
+                    <script>
+                        function increaseValue() {
+                            var valueElement = document.getElementById("myValue");
+                            var currentValue = parseInt(valueElement.innerHTML);
+                            valueElement.innerHTML = currentValue + 1;
+                        }
+                    </script>
                                 <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
                                     style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
                                     {{__('homepage.Be a contributor or sponsor')}}

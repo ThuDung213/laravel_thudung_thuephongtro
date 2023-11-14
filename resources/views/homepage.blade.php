@@ -241,33 +241,36 @@
         </div>
     </div>
     {{-- specific programs --}}
-    <div class="program mt-5">
-        <h1 class="text-center">{{__('homepage.SPECIFIC PROGRAMS')}}</h1>
+    <div class="program">
+        <h1 class="text-center my-5">{{__('homepage.SPECIFIC PROGRAMS')}}</h1>
 
         {{-- upcoming program --}}
         <div class="">
-            <h2>{{__('homepage.UPCOMING PROGRAMS')}}</h2>
             <div class="overflow-hidden text-left">
                 <div class="row gx-5 justify-content-evenly">
-                    <div class="col-5 border border-success rounded ">
+                    <div class="col-5 border border-success" style="border-radius: 10px">
                         <iframe class="board-img img-fluid" width="500" height="400"
                             src="https://www.youtube.com/embed/96LUDfTQU0o?si=WpcGl3j2oNqv0i2D"
-                            title="YouTube video player" frameborder="0" style="height: 300px"
+                            title="YouTube video player" frameborder="0" style="border-radius: 20px; height: 300px"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                         <div class="board-content">
                             <h3>{{__('homepage.Dự Án Phát Triển Làng Pà-Ong')}}</h3>
                             <div class="d-flex justify-content-between">
-                                <div class="time">{{__('homepage.Time: 11/2023 - 11/2028')}}</div>
+                                <div class="time">
+                                    <p style="margin: 0">
+                                        Time: 11/2023 - 11/2028
+                                    </p>
+                                </div>
                                 <a class="p-4">
                                     <img class="pngimg-3-icon" alt="" src="{{ asset('public/pngimg-3@2x.png') }}"
                                         width="30" height="30" />
                                 </a>
                             </div>
 
-                            <p>{{__('homepage.It has survived not only five centuries, but also the leap into electronic
+                            <p>It has survived not only five centuries, but also the leap into electronic
                                 typesetting, remaining when an unknown printer took a galley of type and scrambled it to
-                                make a type specimen book. essentially.')}}</p>
+                                make a type specimen book. essentially.</p>
                             <div class="board-file">
                                 <a class="icon-link icon-link-hover px-4"
                                     style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
@@ -285,8 +288,8 @@
                             </div>
                             <div class="pg-bar">
                                 <p>{{__('homepage.Progress')}}</p>
-                                <img class="chart-icon" alt="" src="{{ asset('public/chart2.svg') }}" width="400"
-                                    height="6" />
+                                <img class="chart-icon" style="width: 100%" alt=""
+                                    src="{{ asset('public/chart2.svg') }}" height="6" />
                             </div>
                             <div class="d-flex justify-content-between mt-4">
                                 <div class="d-flex justify-content-left">
@@ -295,7 +298,10 @@
                                         onclick="increaseValue()" />
                                     <p id="myValue" class="mt-2">700</p>
                                 </div>
-
+                                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
+                                    style="padding: 0 20px; color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
+                                    {{__('homepage.Be a contributor or sponsor')}}
+                                </button>
                                 <script>
                                     function increaseValue() {
                             var valueElement = document.getElementById("myValue");
@@ -303,10 +309,7 @@
                             valueElement.innerHTML = currentValue + 1;
                         }
                                 </script>
-                                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
-                                    style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
-                                    {{__('homepage.Be a contributor or sponsor')}}
-                                </button>
+
                                 <!-- The Modal -->
                                 <div class="modal" id="myModal">
                                     <div class="modal-dialog">
@@ -356,25 +359,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5 border border-success rounded ">
+                    <div class="col-5 border border-success" style="border-radius: 10px">
                         <iframe class="board-img img-fluid" width="500" height="400"
                             src="https://www.youtube.com/embed/96LUDfTQU0o?si=WpcGl3j2oNqv0i2D"
-                            title="YouTube video player" frameborder="0" style="height: 300px"
+                            title="YouTube video player" frameborder="0" style="border-radius: 20px; height: 300px"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                         <div class="board-content">
                             <h3>{{__('homepage.Dự Án Phát Triển Làng Pà-Ong')}}</h3>
                             <div class="d-flex justify-content-between">
-                                <div class="time">{{__('homepage.Time: 11/2023 - 11/2028')}}</div>
+                                <div class="time">
+                                    <p style="margin: 0">
+                                        Time: 11/2023 - 11/2028
+                                    </p>
+                                </div>
                                 <a class="p-4">
                                     <img class="pngimg-3-icon" alt="" src="{{ asset('public/pngimg-3@2x.png') }}"
                                         width="30" height="30" />
                                 </a>
                             </div>
 
-                            <p>{{__('homepage.It has survived not only five centuries, but also the leap into electronic
+                            <p>It has survived not only five centuries, but also the leap into electronic
                                 typesetting, remaining when an unknown printer took a galley of type and scrambled it to
-                                make a type specimen book. essentially.')}}</p>
+                                make a type specimen book. essentially.</p>
                             <div class="board-file">
                                 <a class="icon-link icon-link-hover px-4"
                                     style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
@@ -392,8 +399,8 @@
                             </div>
                             <div class="pg-bar">
                                 <p>{{__('homepage.Progress')}}</p>
-                                <img class="chart-icon" alt="" src="{{ asset('public/chart2.svg') }}" width="400"
-                                    height="6" />
+                                <img class="chart-icon" style="width: 100%" alt=""
+                                    src="{{ asset('public/chart2.svg') }}" height="6" />
                             </div>
                             <div class="d-flex justify-content-between mt-4">
                                 <div class="d-flex justify-content-left">
@@ -402,7 +409,10 @@
                                         onclick="increaseValue()" />
                                     <p id="myValue" class="mt-2">700</p>
                                 </div>
-
+                                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
+                                    style="padding: 0 20px; color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
+                                    {{__('homepage.Be a contributor or sponsor')}}
+                                </button>
                                 <script>
                                     function increaseValue() {
                             var valueElement = document.getElementById("myValue");
@@ -419,10 +429,7 @@
                             valueElement.innerHTML = currentValue + 1;
                         }
                             </script>
-                            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
-                                style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
-                                {{__('homepage.Be a contributor or sponsor')}}
-                            </button>
+
                             <!-- The Modal -->
                             <div class="modal" id="myModal">
                                 <div class="modal-dialog">

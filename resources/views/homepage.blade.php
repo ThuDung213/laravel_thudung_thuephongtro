@@ -21,7 +21,8 @@
     </script>
     <style>
         table {
-            width: 100%;
+            width: 98%;
+            margin-left: 20px;
             border-collapse: collapse;
         }
 
@@ -476,6 +477,67 @@
     </div>
 
     {{-- Blog --}}
+    {{-- <div class="blog mt-5 justify-content-center">
+        <h1 class="text-center">{{__('homepage.NEWS')}}</h1>
+        <div class="">
+            <div class="card blog-card" >
+                <input type="radio" name="select" id="tap-1" checked>
+                <input type="radio" name="select" id="tap-2">
+                <input type="radio" name="select" id="tap-3">
+                <input type="checkbox" id="tapImg">
+                <div class="sliders">
+                    <label for="tap-1" class="tap tap-1"></label>
+                    <label for="tap-2" class="tap tap-2"></label>
+                    <label for="tap-3" class="tap tap-3"></label>
+                </div>
+                <div class="inner-part">
+                    <label for="tapImg" class="img">
+                        <iframe class="img-1" src="https://www.youtube.com/embed/TKpN7cVX7y8?si=KANkoCAeu7xDvyry"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </label>
+                    <div class="content content-1">
+                        <span>Tue, 2023/12/25'</span>
+                        <div class="title">KHỞI ĐỘNG DỰ ÁN THÍ XÂY DỰNG MÔ HÌNH KINH TẾ VƯỜN </div>
+                        <div class="text">
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm.&nbsp;</span></p>
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi. Dự án nhằm xây dựng mô hình&nbsp; trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Dự án sẽ đồng hành cùng bà con trong quá trình xây dựng, phát triển mô hình. Qua đó, chia sẻ kiến thức khoa họa và kỹ năng làm vườn, giúp bà con hiểu sâu sắc về làm.</span></p>
+                          
+                        </div>
+                      
+                    </div>
+                </div>
+                <div class="inner-part">
+                    <label for="tapImg" class="img">
+                        <iframe class="img-1" src="https://www.youtube.com/embed/TKpN7cVX7y8?si=KANkoCAeu7xDvyry"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </label>
+                    <div class="content content-1">
+                        <span>Tue, 2023/12/25'</span>
+                        <div class="title">KHỞI ĐỘNG DỰ ÁN THÍ XÂY DỰNG MÔ HÌNH KINH TẾ VƯỜN </div>
+                        <div class="text">
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm.&nbsp;</span></p>
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi. Dự án nhằm xây dựng mô hình&nbsp; trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Dự án sẽ đồng hành cùng bà con trong quá trình xây dựng, phát triển mô hình. Qua đó, chia sẻ kiến thức khoa họa và kỹ năng làm vườn, giúp bà con hiểu sâu sắc về làm.</span></p>
+                          
+                        </div>
+                      
+                    </div>
+                </div>
+                
+             
+                </div>
+                
+            </div>
+            
+        </div>
+        
+      
+    </div>
+     --}}
+       {{-- Blog --}}
     <div class="blog mt-5 justify-content-center">
         <h1 class="text-center">{{__('homepage.NEWS')}}</h1>
         <div class="">
@@ -498,13 +560,13 @@
                     </label>
                     <div class="content content-1">
                         <span>Tue, 2023/12/25'</span>
-                        <div class="title">STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC
-                            MODEL</div>
-                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư,
-                            và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với
-                            người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn
-                            nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
-                        <button>{{__('homepage.Read more')}}</button>
+                        <div class="title">KHỞI ĐỘNG DỰ ÁN THÍ XÂY DỰNG MÔ HÌNH KINH TẾ VƯỜN </div>
+                        <div class="text">
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm.&nbsp;</span></p>
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi. Dự án nhằm xây dựng mô hình&nbsp; trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Dự án sẽ đồng hành cùng bà con trong quá trình xây dựng, phát triển mô hình. Qua đó, chia sẻ kiến thức khoa họa và kỹ năng làm vườn, giúp bà con hiểu sâu sắc về làm.</span></p>
+                          
+                        </div>
+                      
                     </div>
                 </div>
                 <div class="inner-part">
@@ -515,15 +577,14 @@
                             allowfullscreen></iframe>
                     </label>
                     <div class="content content-2">
-                        <span>{{__('homepage.Tue, 2023/12/25')}}</span>
-                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC
-                            MODEL')}}</div>
-                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư,
-                            và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với
-                            người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn
-                            nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
-                        <button>{{__('homepage.Read more')}}</button>
-                    </div>
+                        <span>Tue, 2023/12/25'</span>
+                        <div class="title">BA BÊN HỌP THỐNG NHẤT THỰC HIỆN DỰ ÁN </div>
+                        <div class="text">
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm.&nbsp;</span></p>
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi. Dự án nhằm xây dựng mô hình&nbsp; trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Dự án sẽ đồng hành cùng bà con trong quá trình xây dựng, phát triển mô hình. Qua đó, chia sẻ kiến thức khoa họa và kỹ năng làm vườn, giúp bà con hiểu sâu sắc về làm.</span></p>
+                          
+                        </div>
+                      
                 </div>
                 <div class="inner-part">
                     <label for="tapImg" class="img">
@@ -533,14 +594,13 @@
                             allowfullscreen></iframe>
                     </label>
                     <div class="content content-3">
-                        <span>{{__('homepage.Tue, 2023/12/25')}}</span>
-                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC
-                            MODEL')}}</div>
-                        <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư,
-                            và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với
-                            người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn
-                            nữa bà con có tập quán trồng trọt và chăn nuôi.')}}</div>
-                        <button>{{__('homepage.Read more')}}</button>
+                        <span>Tue, 2023/12/25'</span>
+                        <div class="title">BA BÊN HỌP THỐNG NHẤT THỰC HIỆN DỰ ÁN </div>
+                        <div class="text">
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm.&nbsp;</span></p>
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi. Dự án nhằm xây dựng mô hình&nbsp; trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Dự án sẽ đồng hành cùng bà con trong quá trình xây dựng, phát triển mô hình. Qua đó, chia sẻ kiến thức khoa họa và kỹ năng làm vườn, giúp bà con hiểu sâu sắc về làm.</span></p>
+                          
+                        </div>
                     </div>
                 </div>
             </div>
@@ -548,20 +608,16 @@
     </div>
 
 
+ 
     {{-- Contributors --}}
-    {{-- Contributors --}}
-    <<section class="section" id="section_1285404068">
+    <section class="section" id="section_1285404068">
         <div class="bg section-bg fill bg-fill bg-loaded">
-
-
 
 
 
         </div>
 
-
-
-        <div class="section-content relative">
+        <div class="section-content relative" >
 
             <span class="scroll-to" data-label="Scroll to: #contributor" data-bullet="false" data-link="#contributor"
                 data-title="Contributors"><a name="contributor"></a></span>
@@ -572,10 +628,9 @@
 
 
                         <div class="container section-title-container">
-                            <h1 class="section-title section-title-center"><b></b><span class="section-title-main"
-                                    style="font-size:120%;color:rgb(0, 0, 0);">NHỮNG NGƯỜI ĐÓNG GÓP</span><b></b></h1>
+                            <h1 class="text-center">{{__('homepage.Founder')}}</h1>
                         </div>
-                        <h2><span style="color: #000000;"><b>Founder</b></span></h2>
+                        <h2><span style="color: #000000; margin-left: 100px" ><b>Founder</b></span></h2>
                         <div class="row align-middle" id="row-1069529150">
 
                             <div id="col-794226324" class="col medium-6 small-12 large-6">
@@ -613,7 +668,7 @@
 
 
                             <div id="col-271484070" class="col medium-6 small-12 large-6">
-                                <div class="col-inner" style="margin-right: 100px">
+                                <div class="col-inner" style="margin-right: 100px " >
 
 
                                     <div id="text-4198860867" class="text">
@@ -710,7 +765,7 @@
 
                 <div class="container section-title-container">
                     <h1 class="section-title section-title-center"><b></b><span class="section-title-main"
-                            style="font-size:150%;color:rgb(0, 0, 0);">Q&amp;A</span><b></b></h1>
+                            style="font-size:150%;color:rgb(0, 0, 0); margin-left: 600px">Q&amp;A</span><b></b></h1>
                 </div>
                 <span class="scroll-to" data-label="Scroll to: #qas" data-bullet="false" data-link="#qas"
                     data-title="QAs"><a name="qas"></a></span>

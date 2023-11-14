@@ -4,6 +4,7 @@ return[
     'About' => "Thông tin",
     'Services' => "Dịch vụ",
     'Contact' => "Liên lạc",
-    "NEWS" => "tin tức"
+    "NEWS" => "Tin tức",
+    'Founder'=>"Những người đóng góp"
 ]
 ?>

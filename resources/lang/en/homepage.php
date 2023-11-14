@@ -10,7 +10,7 @@ return [
     "Plan file" => "Plan File",
     "Pitch file" => "Pitch File",
     "Progress" => "Progress",
-    " Be a contributor or sponsor" => "Be a contributor or sponsor",
+    "Be a contributor or sponsor" => "Be a contributor or sponsor",
     "TÀI TRỢ " => "SPONSOR",
     "Nội dung" => "Content",
     "Tên*" => "Name*",
@@ -39,4 +39,6 @@ return [
     "Settings" => "Settings",
     "Orders" => "Orders",
     "Help" => "Help",
+    "NEWS" => "news"
+
 ];

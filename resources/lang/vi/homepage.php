@@ -4,5 +4,6 @@ return[
     'About' => "Thông tin",
     'Services' => "Dịch vụ",
     'Contact' => "Liên lạc",
+    "NEWS" => "tin tức"
 ]
 ?>

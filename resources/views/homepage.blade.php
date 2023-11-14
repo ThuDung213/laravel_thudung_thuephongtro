@@ -19,20 +19,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-     <style>
-            table {
+    <style>
+        table {
             width: 100%;
             border-collapse: collapse;
         }
-        
-        th, td {
+
+        th,
+        td {
             padding: 8px;
             text-align: left;
             border-bottom: 1px solid #0d0c0c;
-            border: 1px solid #198754; /* Thêm border cho mỗi ô */
+            border: 1px solid #198754;
+            /* Thêm border cho mỗi ô */
         }
-        
-        
+
+
         th {
             background-color: #f2f2f2;
         }
@@ -287,18 +289,20 @@
                                     height="6" />
                             </div>
                             <div class="d-flex justify-content-between mt-4">
-                                 <div class="d-flex justify-content-left">
-                        <img id="myImage" class="icon-2445095-1280-12" alt="" src="./public/icon2445095-1280-12@2x.png" width="40" height="40" onclick="increaseValue()" />
-                        <p id="myValue" class="mt-2">700</p>
-                    </div>
-                    
-                    <script>
-                        function increaseValue() {
+                                <div class="d-flex justify-content-left">
+                                    <img id="myImage" class="icon-2445095-1280-12" alt=""
+                                        src="./public/icon2445095-1280-12@2x.png" width="40" height="40"
+                                        onclick="increaseValue()" />
+                                    <p id="myValue" class="mt-2">700</p>
+                                </div>
+
+                                <script>
+                                    function increaseValue() {
                             var valueElement = document.getElementById("myValue");
                             var currentValue = parseInt(valueElement.innerHTML);
                             valueElement.innerHTML = currentValue + 1;
                         }
-                    </script>
+                                </script>
                                 <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
                                     style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
                                     {{__('homepage.Be a contributor or sponsor')}}
@@ -392,74 +396,73 @@
                                     height="6" />
                             </div>
                             <div class="d-flex justify-content-between mt-4">
-                                   <div class="d-flex justify-content-left">
-                        <img id="myImage" class="icon-2445095-1280-12" alt="" src="./public/icon2445095-1280-12@2x.png" width="40" height="40" onclick="increaseValue()" />
-                        <p id="myValue" class="mt-2">700</p>
-                    </div>
-                    
-                    <script>
-                        function increaseValue() {
+                                <div class="d-flex justify-content-left">
+                                    <img id="myImage" class="icon-2445095-1280-12" alt=""
+                                        src="./public/icon2445095-1280-12@2x.png" width="40" height="40"
+                                        onclick="increaseValue()" />
+                                    <p id="myValue" class="mt-2">700</p>
+                                </div>
+
+                                <script>
+                                    function increaseValue() {
                             var valueElement = document.getElementById("myValue");
                             var currentValue = parseInt(valueElement.innerHTML);
                             valueElement.innerHTML = currentValue + 1;
                         }
-                    </script>
-                    </div>
-                    
-                    <script>
-                        function increaseValue() {
+                                </script>
+                            </div>
+
+                            <script>
+                                function increaseValue() {
                             var valueElement = document.getElementById("myValue");
                             var currentValue = parseInt(valueElement.innerHTML);
                             valueElement.innerHTML = currentValue + 1;
                         }
-                    </script>
-                                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
-                                    style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
-                                    {{__('homepage.Be a contributor or sponsor')}}
-                                </button>
-                                <!-- The Modal -->
-                                <div class="modal" id="myModal">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <!-- Modal Header -->
-                                            <div class="modal-header">
-                                                <h4 class="modal-title text-center"
-                                                    style="text-align: center; color: #198754;">
-                                                    {{__('homepage.TÀI TRỢ')}}
-                                                </h4>
-                                                <button type="button" class="btn-close"
-                                                    data-bs-dismiss="modal"></button>
-                                            </div>
-                                            <!-- Modal body -->
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="mb-3">
-                                                        <label for="message-text"
-                                                            class="col-form-label">{{__('homepage.Nội dung')}}</label>
-                                                        <textarea class="form-control" id="message-text"></textarea>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for=""
-                                                            class="col-form-label">{{__('homepage.Tên*')}}</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for=""
-                                                            class="col-form-label">{{__('homepage.Mail*')}}</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="" class="col-form-label">{{__('homepage.Số điện
-                                                            thoại')}}</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <!-- Modal footer -->
-                                            <div class="modal-footer">
-                                                <button type="button" class=" " data-bs-dismiss="modal"
-                                                    style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">{{__('homepage.Gửi')}}</button>
-                                            </div>
+                            </script>
+                            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
+                                style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
+                                {{__('homepage.Be a contributor or sponsor')}}
+                            </button>
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title text-center"
+                                                style="text-align: center; color: #198754;">
+                                                {{__('homepage.TÀI TRỢ')}}
+                                            </h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">{{__('homepage.Nội
+                                                        dung')}}</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="" class="col-form-label">{{__('homepage.Tên*')}}</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for=""
+                                                        class="col-form-label">{{__('homepage.Mail*')}}</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="" class="col-form-label">{{__('homepage.Số điện
+                                                        thoại')}}</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class=" " data-bs-dismiss="modal"
+                                                style="color: #fff; background-color: #198754; border-radius: 5px; border: #198754">{{__('homepage.Gửi')}}</button>
                                         </div>
                                     </div>
                                 </div>
@@ -469,6 +472,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     {{-- Blog --}}
@@ -493,9 +497,9 @@
                             allowfullscreen></iframe>
                     </label>
                     <div class="content content-1">
-                        <span>{{__('homepage.Tue, 2023/12/25')}}</span>
-                        <div class="title">{{__('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC
-                            MODEL')}}</div>
+                        <span>Tue, 2023/12/25'</span>
+                        <div class="title">STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC
+                            MODEL</div>
                         <div class="text">{{__('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư,
                             và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với
                             người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn
@@ -545,328 +549,440 @@
 
 
     {{-- Contributors --}}
-{{-- Contributors --}}
+    {{-- Contributors --}}
     <<section class="section" id="section_1285404068">
-		<div class="bg section-bg fill bg-fill bg-loaded">
-
-			
-			
-			
-
-		</div>
-
-		
-
-		<div class="section-content relative">
-			
-<span class="scroll-to" data-label="Scroll to: #contributor" data-bullet="false" data-link="#contributor" data-title="Contributors"><a name="contributor"></a></span>
-<div class="row" id="row-202264764">
-
-	<div id="col-1806347160" class="col small-12 large-12">
-				<div class="col-inner">
-			
-			
-<div class="container section-title-container"><h1 class="section-title section-title-center"><b></b><span class="section-title-main" style="font-size:120%;color:rgb(0, 0, 0);">NHỮNG NGƯỜI ĐÓNG GÓP</span><b></b></h1></div>
-<h2><span style="color: #000000;"><b>Founder</b></span></h2>
-<div class="row align-middle" id="row-1069529150">
-
-	<div id="col-794226324" class="col medium-6 small-12 large-6">
-				<div class="col-inner">
-			
-			
-	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1332416647">
-								<div class="img-inner dark" style="margin-left: 100px">
-			<img width="398" height="529" src="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg" class="attachment-large size-large wvs-archive-product-image lazyautosizes ls-is-cached lazyloaded" alt="" decoding="async" data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg" data-srcset="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg 398w, https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276-301x400.jpg 301w" data-sizes="auto" sizes="555px" srcset="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg 398w, https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276-301x400.jpg 301w"><noscript><img width="398" height="529" src="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg" class="attachment-large size-large wvs-archive-product-image" alt="" decoding="async" srcset="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg 398w, https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276-301x400.jpg 301w" sizes="(max-width: 398px) 100vw, 398px" data-eio="l" /></noscript>						
-					</div>
-								
-<style>
-#image_1332416647 {
-  width: 100%;
-}
-</style>
-	</div>
-	
-		</div>
-					</div>
-
-	
-
-	<div id="col-271484070" class="col medium-6 small-12 large-6">
-				<div class="col-inner" style="margin-right: 100px">
-			
-			
-	<div id="text-4198860867" class="text">
-		
-<p style="text-align: left;"><span style="font-size: 150%;"><strong><span style="color: #000000;">Đinh Thị Đông Phương</span></strong></span><br>
-<span style="font-size: 85%;"><em><span style="color: #000000;">PHD. chuyên ngành công nghệ thông tin, Nhật Bản</span></em></span><br>
-<span style="font-size: 85%;"><em><span style="color: #000000;">BA chuyên ngành sư phạm toán tin, tâm lý, giáo dục</span></em></span></p>
-<p style="text-indent: 30px;"><span style="color: #000000; font-size: 90%;">Tôi được sinh ra và lớn lên ở 1 vùng quê tỉnh Quảng Nam. Tuổi thơ của tôi đầy ắp những trải nghiệm với tự nhiên và đầy tình yêu thương. Tôi và đám bạn trẻ con chơi đủ thứ trò, nào là trốn tìm, bắn trổng, bắn bi, chơi kèn lá, chơi ô quan, nhảy dây, đan lờ bắt cá bắt cua, leo cây hái trái, vào hang bắt dơi, etc. Bố tôi là giáo viên nhưng ông cũng là nông dân rất giỏi. Ngoài giờ làm việc, ông làm đủ thứ. Vỡ đất trồng lúa, chăn nuôi, nấu rượu, làm bún, làm mì, cắt tóc, sửa xe, làm nhà, etc. Mẹ tôi cũng là giáo viên, và bà cũng làm đủ thứ ngoài giờ. Bà làm thuốc nam, dạy thêm, buôn bán, etc. Bố mẹ tôi luôn hỗ trơ nhau khi làm việc. Tôi theo chân bố, chân mẹ trong hầu hết các công việc của ông bà nên tôi được trải nghiệm và học hỏi rất nhiều điều thú vị.</span></p>
-<p style="text-indent: 30px;"><span style="color: #000000; font-size: 90%;">Tôi vào đại học, đi làm, rồi đi du học và làm việc ở Nhật từ năm 2026 đến 2020. Tôi đã tham gia rất nhiều các hoạt động thực tế ở Nhật, từ trồng lúa trồng khoai trồng rau nấu ăn làm bánh nướng thịt cắm trại ngoài trời diễn tập phòng cháy chữa cháy, etc đến làm quản lý dự án IT, làm tiến sĩ, làm giảng viên của đại học Ritsumeikan. Những người bạn vừa có kỹ năng cao trong lĩnh vực họ yêu thích, có kỹ năng xử lý vấn đề rất nhạy bén, và đầy tình yêu thương. Tình yêu thương của người thân, bạn bè giúp tôi phát triển trí tuệ, chữa lành những tổn thương, và trưởng thành qua các trải nghiệm thực tế. Tôi được chữa lành, trở nên tự tin lạc quan yêu đời yêu người, yêu cuộc sống này vô cùng.</span></p>
-<p style="text-indent: 30px;"><span style="color: #000000; font-size: 90%;">Tôi hiểu ra rằng, mỗi khi tôi tham gia hoạt động gì đó để giúp đỡ người khác, tôi không những phát triển trí tuệ và còn được chữa lành. Tình yêu thương trong tôi lớn thêm. Tôi thêm yêu con người và yêu cuộc sống này. Đây quả thực là điều kì diệu. Càng giúp người, chúng ta càng phát triển trí tuệ và càng hạnh phúc hơn. Hãy tham gia dự án để trải nghiệm những điều kỳ diệu này với chúng tôi.</span></p>
-		
-<style>
-#text-4198860867 {
-  text-align: left;
-}
-</style>
-	</div>
-	
-		</div>
-					</div>
-
-	
-</div>
-		</div>
-					</div>
-
-	
-</div>
-		</div>
-
-		
-<style>
-#section_1285404068 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: rgb(215, 251, 232);
-}
-#section_1285404068 .ux-shape-divider--top svg {
-  height: 150px;
-  --divider-top-width: 100%;
-}
-#section_1285404068 .ux-shape-divider--bottom svg {
-  height: 150px;
-  --divider-width: 100%;
-}
-</style>
-</section>
-<section class="section" id="section_523525734">
-    <div class="bg section-bg fill bg-fill bg-loaded">
-
-        
-        
-        
-
-    </div>
-
-    
-
-    <div class="section-content relative">
-        
-<div class="container section-title-container"><h1 class="section-title section-title-center"><b></b><span class="section-title-main" style="font-size:150%;color:rgb(0, 0, 0);">Q&amp;A</span><b></b></h1></div>
-<span class="scroll-to" data-label="Scroll to: #qas" data-bullet="false" data-link="#qas" data-title="QAs"><a name="qas"></a></span>
-<div class="row" id="row-303443696">
-
-<div id="col-375192784" class="col small-12 large-12">
-            <div class="col-inner">
-        
-        
-<div id="text-1357899619" class="text hide-for-small">
-    
-<table>
-<tbody>
-<tr>
-<td><span style="color: #000000;"><strong>1.</strong></span></td>
-<td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span style="font-weight: 400; color: #000000;">Nếu chúng ta phát triển được một ngôi làng, thì chúng ta cũng cũng sẽ tìm ra cách phát triển những ngôi làng khác. Do vậy tôi thấy rất thú vị và muốn hiểu hơn về các chương trình cụ thể của dự án, từ đó tôi có thể sắp xếp để tham gia một vài chương trình nào đó.</span></td>
-<td><span style="color: #000000;"><strong>A.</strong></span> <span style="font-weight: 400; color: #000000;">Cảm ơn bạn.</span> <span style="font-weight: 400; color: #000000;">Đúng vậy, dự án có nhiều chương trình. Về cơ bản đó là các chương trình đào tạo bằng làm và học thực tế:</span><p></p>
-<ul>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400; color: #000000;">Phát triển nông nghiệp bền vững, bảo vệ môi trường</span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400; color: #000000;">Phát triển kỹ năng sống cho trẻ em</span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400; color: #000000;">Nâng cao kỹ năng làm nghề, làm sản phẩm, dịch vụ</span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400; color: #000000;">Phát triển kỹ năng làm kinh doanh</span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400; color: #000000;">Phát triển kỹ năng giao tiếp và ngoại ngữ</span></li>
-</ul>
-<p><span style="color: #000000;"><span style="font-weight: 400;">Hãy gọi 0962 414 125 hoặc email </span><a style="color: #000000;" href="mailto:dinhdongphuong@gmail.com"><span style="font-weight: 400;">dinhdongphuong@gmail.com</span></a><span style="font-weight: 400;"> để bạn nắm rõ&nbsp; và đăng ký tham gia bạn nhé.&nbsp;</span></span></p></td>
-</tr>
-<tr>
-<td style="text-align: center;"><span style="color: #000000;"><strong>2.</strong></span></td>
-<td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span style="font-weight: 400; color: #000000;">Nếu tôi tham gia, thì tôi sẽ ở đâu, và ăn uống thế nào?</span></td>
-<td><span style="color: #000000;"><b>A.</b></span> <span style="font-weight: 400; color: #000000;">Tùy vào chương trình cụ thể. Nếu chương trình yêu cầu tham gia đào tạo thực tế tại ngôi làm thì chúng ta sẽ ở lại trong làng. Ban tổ chức sẽ sắp xếp cho bạn.&nbsp;</span></td>
-</tr>
-<tr>
-<td>
-<p style="text-align: center;"><span style="color: #000000;"><strong>3.</strong></span></p>
-</td>
-<td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span style="font-weight: 400; color: #000000;">Tôi muốn đóng góp một số ý kiến cho dự án. Tôi liên lạc với ai?</span></td>
-<td><span style="color: #000000;"><b>A.</b></span> <span style="color: #000000;"><span style="font-weight: 400;">Cảm ơn&nbsp; những ý kiến đóng góp chân thành của bạn. Bạn gọi 0962 414 125 hoặc email </span><a style="color: #000000;" href="mailto:dinhdongphuong@gmail.com"><span style="font-weight: 400;">dinhdongphuong@gmail.com</span></a><span style="font-weight: 400;"> cho Phương nhé.</span></span></td>
-</tr>
-<tr>
-<td>
-<p style="text-align: center;"><span style="color: #000000;"><b>4.</b></span></p>
-</td>
-<td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span style="font-weight: 400; color: #000000;">Tôi muốn đứng ra vận động quyên góp cho dự án. Tôi liên lạc ai?</span></td>
-<td><span style="color: #000000;"><b>A.</b></span> <span style="color: #000000;"><span style="font-weight: 400;">Cảm ơn sự hỗ trợ và cộng tác chân thành của bạn. Bạn gọi 0962 414 125 hoặc email </span><a style="color: #000000;" href="mailto:dinhdongphuong@gmail.com"><span style="font-weight: 400;">dinhdongphuong@gmail.com</span></a><span style="font-weight: 400;"> cho Phương để nắm rõ hơn về dự án nhé.&nbsp;</span></span></td>
-</tr>
-<tr>
-<td>
-<p style="text-align: center;"><span style="color: #000000;"><b>5.</b></span></p>
-</td>
-<td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span style="font-weight: 400; color: #000000;">Dự án có nhận sự tài trợ bằng tiền không?&nbsp;</span></td>
-<td>
-<p><span style="color: #000000;"><b>A.</b></span> <span style="font-weight: 400; color: #000000;">Mỗi chương trình của dự án có nội dung chi tiết được đăng ở website. Nếu là chương trình cần sự hỗ trợ về tài chính, bạn hỗ trợ bằng cách chuyển khoản đến tài khoản của chức Smile Eye Charity. </span></p>
-<p><span style="font-weight: 400; color: #000000;">Số tài khoản:</span></p>
-<ul>
-<li><span style="color: #000000;">MB bank, 020166669999, Smile Eye Charity</span></li>
-<li><span style="color: #000000;">Techcombank, 22296699, Smile Eye Charity</span></li>
-</ul>
-<p><span style="font-weight: 400; color: #000000;">Chúng tôi sẽ liên lạc lại cho bạn ngay sau khi xác nhận sự hỗ trợ của bạn.&nbsp;</span></p>
-</td>
-</tr>
-</tbody>
-</table>
-    
-
-    
-<style>
-#text-2271907822 {
-color: rgb(0,0,0);
-}
-#text-2271907822 > * {
-color: rgb(0,0,0);
-}
-</style>
-</div>
-
-    </div>
-                </div>
+        <div class="bg section-bg fill bg-fill bg-loaded">
 
 
-</div>
-    </div>
 
-    
-<style>
-#section_523525734 {
-padding-top: 30px;
-padding-bottom: 30px;
-}
-#section_523525734 .ux-shape-divider--top svg {
-height: 150px;
---divider-top-width: 100%;
-}
-#section_523525734 .ux-shape-divider--bottom svg {
-height: 150px;
---divider-width: 100%;
-}
-</style>
-</section>
-    <!-- Footer -->
-    <footer class=" mt-4 text-center text-lg-start bg-footer">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Right -->
-            <div>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
 
-        <!-- Section: Links  -->
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3 text-secondary">{{__('homepage.Company name')}}</i>
-                        </h6>
-                        <p>
-                            {{__('homepage.Here you can use rows and columns to organize your footer content. Lorem
-                            ipsum dolor sit amet, consectetur adipisicing elit.')}}
-                        </p>
-                    </div>
-                    <!-- Grid column -->
 
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            {{__('homepage.Products')}}
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">{{__('homepage.Angular')}}</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">{{__('homepage.React')}}</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">{{__('homepage.Vue')}}</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">{{__('homepage.Laravel')}}</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            {{__('homepage.Useful links')}}
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">{{__('homepage.Pricing')}}</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">{{__('homepage.Settings')}}</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">{{__('homepage.Orders')}}</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">{{__('homepage.Help')}}</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">{{__('homepage.Contact')}}</h6>
-                        <p><i class="fas fa-home me-3 text-secondary"></i> {{__('homepage.New York, NY 10012, US')}}</p>
-                        <p>
-                            <i class="fas fa-envelope me-3 text-secondary"></i>
-                            {{__('homepage.info@example.com')}}
-                        </p>
-                        <p><i class="fas fa-phone me-3 text-secondary"></i> {{__('homepage.+ 01 234 567 88')}}</p>
-                        <p><i class="fas fa-print me-3 text-secondary"></i> {{__('homepage.+ 01 234 567 89')}}</p>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
-            </div>
-        </section>
-
-        <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
         </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+
+
+
+        <div class="section-content relative">
+
+            <span class="scroll-to" data-label="Scroll to: #contributor" data-bullet="false" data-link="#contributor"
+                data-title="Contributors"><a name="contributor"></a></span>
+            <div class="row" id="row-202264764">
+
+                <div id="col-1806347160" class="col small-12 large-12">
+                    <div class="col-inner">
+
+
+                        <div class="container section-title-container">
+                            <h1 class="section-title section-title-center"><b></b><span class="section-title-main"
+                                    style="font-size:120%;color:rgb(0, 0, 0);">NHỮNG NGƯỜI ĐÓNG GÓP</span><b></b></h1>
+                        </div>
+                        <h2><span style="color: #000000;"><b>Founder</b></span></h2>
+                        <div class="row align-middle" id="row-1069529150">
+
+                            <div id="col-794226324" class="col medium-6 small-12 large-6">
+                                <div class="col-inner">
+
+
+                                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1332416647">
+                                        <div class="img-inner dark" style="margin-left: 100px">
+                                            <img width="398" height="529"
+                                                src="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg"
+                                                class="attachment-large size-large wvs-archive-product-image lazyautosizes ls-is-cached lazyloaded"
+                                                alt="" decoding="async"
+                                                data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg"
+                                                data-srcset="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg 398w, https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276-301x400.jpg 301w"
+                                                data-sizes="auto" sizes="555px"
+                                                srcset="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg 398w, https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276-301x400.jpg 301w"><noscript><img
+                                                    width="398" height="529"
+                                                    src="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg"
+                                                    class="attachment-large size-large wvs-archive-product-image" alt=""
+                                                    decoding="async"
+                                                    srcset="https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276.jpg 398w, https://smileeyecharity.org/wp-content/uploads/2023/10/z4832130859342_64ac0bd7f56bc5f08efa4e5a923820fb-e1698762180276-301x400.jpg 301w"
+                                                    sizes="(max-width: 398px) 100vw, 398px" data-eio="l" /></noscript>
+                                        </div>
+
+                                        <style>
+                                            #image_1332416647 {
+                                                width: 100%;
+                                            }
+                                        </style>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                            <div id="col-271484070" class="col medium-6 small-12 large-6">
+                                <div class="col-inner" style="margin-right: 100px">
+
+
+                                    <div id="text-4198860867" class="text">
+
+                                        <p style="text-align: left;"><span style="font-size: 150%;"><strong><span
+                                                        style="color: #000000;">Đinh Thị Đông
+                                                        Phương</span></strong></span><br>
+                                            <span style="font-size: 85%;"><em><span style="color: #000000;">PHD. chuyên
+                                                        ngành công nghệ thông tin, Nhật Bản</span></em></span><br>
+                                            <span style="font-size: 85%;"><em><span style="color: #000000;">BA chuyên
+                                                        ngành sư phạm toán tin, tâm lý, giáo dục</span></em></span>
+                                        </p>
+                                        <p style="text-indent: 30px;"><span style="color: #000000; font-size: 90%;">Tôi
+                                                được sinh ra và lớn lên ở 1 vùng quê tỉnh Quảng Nam. Tuổi thơ của tôi
+                                                đầy ắp những trải nghiệm với tự nhiên và đầy tình yêu thương. Tôi và đám
+                                                bạn trẻ con chơi đủ thứ trò, nào là trốn tìm, bắn trổng, bắn bi, chơi
+                                                kèn lá, chơi ô quan, nhảy dây, đan lờ bắt cá bắt cua, leo cây hái trái,
+                                                vào hang bắt dơi, etc. Bố tôi là giáo viên nhưng ông cũng là nông dân
+                                                rất giỏi. Ngoài giờ làm việc, ông làm đủ thứ. Vỡ đất trồng lúa, chăn
+                                                nuôi, nấu rượu, làm bún, làm mì, cắt tóc, sửa xe, làm nhà, etc. Mẹ tôi
+                                                cũng là giáo viên, và bà cũng làm đủ thứ ngoài giờ. Bà làm thuốc nam,
+                                                dạy thêm, buôn bán, etc. Bố mẹ tôi luôn hỗ trơ nhau khi làm việc. Tôi
+                                                theo chân bố, chân mẹ trong hầu hết các công việc của ông bà nên tôi
+                                                được trải nghiệm và học hỏi rất nhiều điều thú vị.</span></p>
+                                        <p style="text-indent: 30px;"><span style="color: #000000; font-size: 90%;">Tôi
+                                                vào đại học, đi làm, rồi đi du học và làm việc ở Nhật từ năm 2026 đến
+                                                2020. Tôi đã tham gia rất nhiều các hoạt động thực tế ở Nhật, từ trồng
+                                                lúa trồng khoai trồng rau nấu ăn làm bánh nướng thịt cắm trại ngoài trời
+                                                diễn tập phòng cháy chữa cháy, etc đến làm quản lý dự án IT, làm tiến
+                                                sĩ, làm giảng viên của đại học Ritsumeikan. Những người bạn vừa có kỹ
+                                                năng cao trong lĩnh vực họ yêu thích, có kỹ năng xử lý vấn đề rất nhạy
+                                                bén, và đầy tình yêu thương. Tình yêu thương của người thân, bạn bè giúp
+                                                tôi phát triển trí tuệ, chữa lành những tổn thương, và trưởng thành qua
+                                                các trải nghiệm thực tế. Tôi được chữa lành, trở nên tự tin lạc quan yêu
+                                                đời yêu người, yêu cuộc sống này vô cùng.</span></p>
+                                        <p style="text-indent: 30px;"><span style="color: #000000; font-size: 90%;">Tôi
+                                                hiểu ra rằng, mỗi khi tôi tham gia hoạt động gì đó để giúp đỡ người
+                                                khác, tôi không những phát triển trí tuệ và còn được chữa lành. Tình yêu
+                                                thương trong tôi lớn thêm. Tôi thêm yêu con người và yêu cuộc sống này.
+                                                Đây quả thực là điều kì diệu. Càng giúp người, chúng ta càng phát triển
+                                                trí tuệ và càng hạnh phúc hơn. Hãy tham gia dự án để trải nghiệm những
+                                                điều kỳ diệu này với chúng tôi.</span></p>
+
+                                        <style>
+                                            #text-4198860867 {
+                                                text-align: left;
+                                            }
+                                        </style>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <style>
+            #section_1285404068 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                background-color: rgb(215, 251, 232);
+            }
+
+            #section_1285404068 .ux-shape-divider--top svg {
+                height: 150px;
+                --divider-top-width: 100%;
+            }
+
+            #section_1285404068 .ux-shape-divider--bottom svg {
+                height: 150px;
+                --divider-width: 100%;
+            }
+        </style>
+        </section>
+        <section class="section" id="section_523525734">
+            <div class="bg section-bg fill bg-fill bg-loaded">
+
+
+
+
+
+            </div>
+
+
+
+            <div class="section-content relative">
+
+                <div class="container section-title-container">
+                    <h1 class="section-title section-title-center"><b></b><span class="section-title-main"
+                            style="font-size:150%;color:rgb(0, 0, 0);">Q&amp;A</span><b></b></h1>
+                </div>
+                <span class="scroll-to" data-label="Scroll to: #qas" data-bullet="false" data-link="#qas"
+                    data-title="QAs"><a name="qas"></a></span>
+                <div class="row" id="row-303443696">
+
+                    <div id="col-375192784" class="col small-12 large-12">
+                        <div class="col-inner">
+
+
+                            <div id="text-1357899619" class="text hide-for-small">
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td><span style="color: #000000;"><strong>1.</strong></span></td>
+                                            <td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span
+                                                    style="font-weight: 400; color: #000000;">Nếu chúng ta phát triển
+                                                    được một ngôi làng, thì chúng ta cũng cũng sẽ tìm ra cách phát triển
+                                                    những ngôi làng khác. Do vậy tôi thấy rất thú vị và muốn hiểu hơn về
+                                                    các chương trình cụ thể của dự án, từ đó tôi có thể sắp xếp để tham
+                                                    gia một vài chương trình nào đó.</span></td>
+                                            <td><span style="color: #000000;"><strong>A.</strong></span> <span
+                                                    style="font-weight: 400; color: #000000;">Cảm ơn bạn.</span> <span
+                                                    style="font-weight: 400; color: #000000;">Đúng vậy, dự án có nhiều
+                                                    chương trình. Về cơ bản đó là các chương trình đào tạo bằng làm và
+                                                    học thực tế:</span>
+                                                <p></p>
+                                                <ul>
+                                                    <li style="font-weight: 400;" aria-level="1"><span
+                                                            style="font-weight: 400; color: #000000;">Phát triển nông
+                                                            nghiệp bền vững, bảo vệ môi trường</span></li>
+                                                    <li style="font-weight: 400;" aria-level="1"><span
+                                                            style="font-weight: 400; color: #000000;">Phát triển kỹ năng
+                                                            sống cho trẻ em</span></li>
+                                                    <li style="font-weight: 400;" aria-level="1"><span
+                                                            style="font-weight: 400; color: #000000;">Nâng cao kỹ năng
+                                                            làm nghề, làm sản phẩm, dịch vụ</span></li>
+                                                    <li style="font-weight: 400;" aria-level="1"><span
+                                                            style="font-weight: 400; color: #000000;">Phát triển kỹ năng
+                                                            làm kinh doanh</span></li>
+                                                    <li style="font-weight: 400;" aria-level="1"><span
+                                                            style="font-weight: 400; color: #000000;">Phát triển kỹ năng
+                                                            giao tiếp và ngoại ngữ</span></li>
+                                                </ul>
+                                                <p><span style="color: #000000;"><span style="font-weight: 400;">Hãy gọi
+                                                            0962 414 125 hoặc email </span><a style="color: #000000;"
+                                                            href="mailto:dinhdongphuong@gmail.com"><span
+                                                                style="font-weight: 400;">dinhdongphuong@gmail.com</span></a><span
+                                                            style="font-weight: 400;"> để bạn nắm rõ&nbsp; và đăng ký
+                                                            tham gia bạn nhé.&nbsp;</span></span></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center;"><span
+                                                    style="color: #000000;"><strong>2.</strong></span></td>
+                                            <td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span
+                                                    style="font-weight: 400; color: #000000;">Nếu tôi tham gia, thì tôi
+                                                    sẽ ở đâu, và ăn uống thế nào?</span></td>
+                                            <td><span style="color: #000000;"><b>A.</b></span> <span
+                                                    style="font-weight: 400; color: #000000;">Tùy vào chương trình cụ
+                                                    thể. Nếu chương trình yêu cầu tham gia đào tạo thực tế tại ngôi làm
+                                                    thì chúng ta sẽ ở lại trong làng. Ban tổ chức sẽ sắp xếp cho
+                                                    bạn.&nbsp;</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="text-align: center;"><span
+                                                        style="color: #000000;"><strong>3.</strong></span></p>
+                                            </td>
+                                            <td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span
+                                                    style="font-weight: 400; color: #000000;">Tôi muốn đóng góp một số ý
+                                                    kiến cho dự án. Tôi liên lạc với ai?</span></td>
+                                            <td><span style="color: #000000;"><b>A.</b></span> <span
+                                                    style="color: #000000;"><span style="font-weight: 400;">Cảm ơn&nbsp;
+                                                        những ý kiến đóng góp chân thành của bạn. Bạn gọi 0962 414 125
+                                                        hoặc email </span><a style="color: #000000;"
+                                                        href="mailto:dinhdongphuong@gmail.com"><span
+                                                            style="font-weight: 400;">dinhdongphuong@gmail.com</span></a><span
+                                                        style="font-weight: 400;"> cho Phương nhé.</span></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="text-align: center;"><span
+                                                        style="color: #000000;"><b>4.</b></span></p>
+                                            </td>
+                                            <td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span
+                                                    style="font-weight: 400; color: #000000;">Tôi muốn đứng ra vận động
+                                                    quyên góp cho dự án. Tôi liên lạc ai?</span></td>
+                                            <td><span style="color: #000000;"><b>A.</b></span> <span
+                                                    style="color: #000000;"><span style="font-weight: 400;">Cảm ơn sự hỗ
+                                                        trợ và cộng tác chân thành của bạn. Bạn gọi 0962 414 125 hoặc
+                                                        email </span><a style="color: #000000;"
+                                                        href="mailto:dinhdongphuong@gmail.com"><span
+                                                            style="font-weight: 400;">dinhdongphuong@gmail.com</span></a><span
+                                                        style="font-weight: 400;"> cho Phương để nắm rõ hơn về dự án
+                                                        nhé.&nbsp;</span></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="text-align: center;"><span
+                                                        style="color: #000000;"><b>5.</b></span></p>
+                                            </td>
+                                            <td><span style="color: #000000;"><b>Q.&nbsp;</b></span> <span
+                                                    style="font-weight: 400; color: #000000;">Dự án có nhận sự tài trợ
+                                                    bằng tiền không?&nbsp;</span></td>
+                                            <td>
+                                                <p><span style="color: #000000;"><b>A.</b></span> <span
+                                                        style="font-weight: 400; color: #000000;">Mỗi chương trình của
+                                                        dự án có nội dung chi tiết được đăng ở website. Nếu là chương
+                                                        trình cần sự hỗ trợ về tài chính, bạn hỗ trợ bằng cách chuyển
+                                                        khoản đến tài khoản của chức Smile Eye Charity. </span></p>
+                                                <p><span style="font-weight: 400; color: #000000;">Số tài khoản:</span>
+                                                </p>
+                                                <ul>
+                                                    <li><span style="color: #000000;">MB bank, 020166669999, Smile Eye
+                                                            Charity</span></li>
+                                                    <li><span style="color: #000000;">Techcombank, 22296699, Smile Eye
+                                                            Charity</span></li>
+                                                </ul>
+                                                <p><span style="font-weight: 400; color: #000000;">Chúng tôi sẽ liên lạc
+                                                        lại cho bạn ngay sau khi xác nhận sự hỗ trợ của
+                                                        bạn.&nbsp;</span></p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+
+                                <style>
+                                    #text-2271907822 {
+                                        color: rgb(0, 0, 0);
+                                    }
+
+                                    #text-2271907822>* {
+                                        color: rgb(0, 0, 0);
+                                    }
+                                </style>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <style>
+                #section_523525734 {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
+
+                #section_523525734 .ux-shape-divider--top svg {
+                    height: 150px;
+                    --divider-top-width: 100%;
+                }
+
+                #section_523525734 .ux-shape-divider--bottom svg {
+                    height: 150px;
+                    --divider-width: 100%;
+                }
+            </style>
+
+        </section>
+        <!-- Footer -->
+        <footer class=" mt-4 text-center text-lg-start bg-footer">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i>Smile Eye Charity
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                THÔNG TIN CÔNG TY
+                            </h6>
+                            <p>
+                                Tên Công Ty: CTY phi lợi nhuận hoạt động từ thiện
+                                Smile Eye Charity (viết tắt là Smile Eye Charity)
+                            </p>
+                            <p>
+                                Mã số Thuế: 4001273487
+                            </p>
+                            <p>
+                                Số tài khoản: MB bank, 020166669999, Smile Eye Charitys
+                            </p>
+                            <p>
+                                Techcombank, 22296699, Smile Eye Charity
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                GIỜ LÀM VIỆC
+                            </h6>
+                            <p>
+                                Từ thứ 2 đến thứ 7: 8h30-17h30
+                            </p>
+                            <p>
+                                Hỗ trợ: 24/7
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">CONTACT</h6>
+                            <p>
+                                Hotline: 0962 414 125
+                            </p>
+                            <p> Email: dinhdongphuong@gmail.com
+                            </p>
+                            <p>Địa Chỉ: Thôn Pà-Ong, Xã Cà Dy, Huyện Nam Giang, Quảng Nam</p>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/"> Smile Eye Charity</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
 </body>
 
 </html>

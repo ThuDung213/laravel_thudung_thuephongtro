@@ -10,7 +10,7 @@ return [
     "Plan file" => "Fichier du plan",
     "Pitch file" => "Fichier Pitch",
     "Progress" => "Progrès",
-    " Be a contributor or sponsor" => "Être contributeur ou sponsor",
+    "Be a contributor or sponsor" => "Être contributeur ou sponsor",
     "TÀI TRỢ " => "SPONSOR",
     "Nội dung" => "Contenu",
     "Tên*" => "Nom*",
@@ -38,5 +38,6 @@ return [
     "Settings" => "Paramètres",
     "Orders" => "Commandes",
     "Help" => "Aide",
+    "NEWS" => "nouvelles"
 ];
 ?>

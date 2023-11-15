@@ -23,7 +23,8 @@
     </script>
     <style>
         table {
-            width: 100%;
+            width: 98%;
+            margin-left: 20px;
             border-collapse: collapse;
         }
 
@@ -44,20 +45,6 @@
 </head>
 
 <body>
-    {{-- header --}}
-    {{-- <div class="header bg">
-        <div class="navbar navbar-expand-lg">
-            <div class="">
-                Phone: 123-456-7890
-                <a href="mailto:info@example.com">Email: info@example.com</a>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end ms-1">
-                <a href="#" target="_blank"><img class="insta-icon" alt="" src="./public/insta.svg" /></a>
-                <a href="#" target="_blank"><img class="fb-icon" alt="" src="./public/fb.svg" /></a>
-                <a href="#" target="_blank"><img class="twiter-icon" alt="" src="./public/twiter.svg" /></a>
-            </div>
-        </div>
-    </div> --}}
     {{-- navbar --}}
     <div class="container-fluid" style="padding: 0%">
         <nav class="navbar navbar-expand-lg navbar-light bg">
@@ -255,34 +242,36 @@
         </div>
     </div>
     {{-- specific programs --}}
-    <div class="program mt-5">
-        <h1 class="text-center">{{ __('homepage.SPECIFIC PROGRAMS') }}</h1>
+    <div class="program">
+        <h1 class="text-center my-5">{{__('homepage.SPECIFIC PROGRAMS')}}</h1>
 
         {{-- upcoming program --}}
         <div class="">
-            <h2>{{ __('homepage.UPCOMING PROGRAMS') }}</h2>
             <div class="overflow-hidden text-left">
                 <div class="row gx-5 justify-content-evenly">
-                    <div class="col-5 border border-success rounded ">
+                    <div class="col-5 border border-success" style="border-radius: 10px">
                         <iframe class="board-img img-fluid" width="500" height="400"
                             src="https://www.youtube.com/embed/96LUDfTQU0o?si=WpcGl3j2oNqv0i2D"
-                            title="YouTube video player" frameborder="0" style="height: 300px"
+                            title="YouTube video player" frameborder="0" style="border-radius: 20px; height: 300px"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                         <div class="board-content">
                             <h3>{{ __('homepage.Dự Án Phát Triển Làng Pà-Ong') }}</h3>
                             <div class="d-flex justify-content-between">
-                                <div class="time">{{ __('homepage.Time: 11/2023 - 11/2028') }}</div>
+                                <div class="time">
+                                    <p style="margin: 0">
+                                        Time: 11/2023 - 11/2028
+                                    </p>
+                                </div>
                                 <a class="p-4">
                                     <img class="pngimg-3-icon" alt=""
                                         src="{{ asset('public/pngimg-3@2x.png') }}" width="30" height="30" />
                                 </a>
                             </div>
 
-                            <p>{{ __('homepage.It has survived not only five centuries, but also the leap into electronic
-                                                                                                                    typesetting, remaining when an unknown printer took a galley of type and scrambled it to
-                                                                                                                    make a type specimen book. essentially.') }}
-                            </p>
+                            <p>It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining when an unknown printer took a galley of type and scrambled it to
+                                make a type specimen book. essentially.</p>
                             <div class="board-file">
                                 <a class="icon-link icon-link-hover px-4"
                                     style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
@@ -300,9 +289,9 @@
                                 </a>
                             </div>
                             <div class="pg-bar">
-                                <p>{{ __('homepage.Progress') }}</p>
-                                <img class="chart-icon" alt="" src="{{ asset('public/chart2.svg') }}"
-                                    width="400" height="6" />
+                                <p>{{__('homepage.Progress')}}</p>
+                                <img class="chart-icon" style="width: 100%" alt=""
+                                    src="{{ asset('public/chart2.svg') }}" height="6" />
                             </div>
                             <div class="d-flex justify-content-between mt-4">
                                 <div class="d-flex justify-content-left">
@@ -311,7 +300,10 @@
                                         onclick="increaseValue()" />
                                     <p id="myValue" class="mt-2">700</p>
                                 </div>
-
+                                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
+                                    style="padding: 0 20px; color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
+                                    {{__('homepage.Be a contributor or sponsor')}}
+                                </button>
                                 <script>
                                     function increaseValue() {
                                         var valueElement = document.getElementById("myValue");
@@ -319,11 +311,6 @@
                                         valueElement.innerHTML = currentValue + 1;
                                     }
                                 </script>
-                                <button type="button" class="" data-bs-toggle="modal"
-                                    data-bs-target="#myModal"
-                                    style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
-                                    {{ __('homepage.Be a contributor or sponsor') }}
-                                </button>
                                 <!-- The Modal -->
                                 <div class="modal" id="myModal">
                                     <div class="modal-dialog">
@@ -377,26 +364,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5 border border-success rounded ">
+                    <div class="col-5 border border-success" style="border-radius: 10px">
                         <iframe class="board-img img-fluid" width="500" height="400"
                             src="https://www.youtube.com/embed/96LUDfTQU0o?si=WpcGl3j2oNqv0i2D"
-                            title="YouTube video player" frameborder="0" style="height: 300px"
+                            title="YouTube video player" frameborder="0" style="border-radius: 20px; height: 300px"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                         <div class="board-content">
                             <h3>{{ __('homepage.Dự Án Phát Triển Làng Pà-Ong') }}</h3>
                             <div class="d-flex justify-content-between">
-                                <div class="time">{{ __('homepage.Time: 11/2023 - 11/2028') }}</div>
+                                <div class="time">
+                                    <p style="margin: 0">
+                                        Time: 11/2023 - 11/2028
+                                    </p>
+                                </div>
                                 <a class="p-4">
                                     <img class="pngimg-3-icon" alt=""
                                         src="{{ asset('public/pngimg-3@2x.png') }}" width="30" height="30" />
                                 </a>
                             </div>
 
-                            <p>{{ __('homepage.It has survived not only five centuries, but also the leap into electronic
-                                                                                                                    typesetting, remaining when an unknown printer took a galley of type and scrambled it to
-                                                                                                                    make a type specimen book. essentially.') }}
-                            </p>
+                            <p>It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining when an unknown printer took a galley of type and scrambled it to
+                                make a type specimen book. essentially.</p>
                             <div class="board-file">
                                 <a class="icon-link icon-link-hover px-4"
                                     style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
@@ -414,9 +404,9 @@
                                 </a>
                             </div>
                             <div class="pg-bar">
-                                <p>{{ __('homepage.Progress') }}</p>
-                                <img class="chart-icon" alt="" src="{{ asset('public/chart2.svg') }}"
-                                    width="400" height="6" />
+                                <p>{{__('homepage.Progress')}}</p>
+                                <img class="chart-icon" style="width: 100%" alt=""
+                                    src="{{ asset('public/chart2.svg') }}" height="6" />
                             </div>
                             <div class="d-flex justify-content-between mt-4">
                                 <div class="d-flex justify-content-left">
@@ -425,7 +415,10 @@
                                         onclick="increaseValue()" />
                                     <p id="myValue" class="mt-2">700</p>
                                 </div>
-
+                                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
+                                    style="padding: 0 20px; color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
+                                    {{__('homepage.Be a contributor or sponsor')}}
+                                </button>
                                 <script>
                                     function increaseValue() {
                                         var valueElement = document.getElementById("myValue");
@@ -442,10 +435,6 @@
                                     valueElement.innerHTML = currentValue + 1;
                                 }
                             </script>
-                            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#myModal"
-                                style="color: #fff; background-color: #198754; border-radius: 2.5rem; border: #198754">
-                                {{ __('homepage.Be a contributor or sponsor') }}
-                            </button>
                             <!-- The Modal -->
                             <div class="modal" id="myModal">
                                 <div class="modal-dialog">
@@ -502,7 +491,8 @@
     </div>
     </div>
 
-    {{-- Blog --}}
+
+       {{-- Blog --}}
     <div class="blog mt-5 justify-content-center">
         <h1 class="text-center">{{ __('homepage.NEWS') }}</h1>
         <div class="">
@@ -525,15 +515,13 @@
                     </label>
                     <div class="content content-1">
                         <span>Tue, 2023/12/25'</span>
-                        <div class="title">STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC
-                            MODEL</div>
+                        <div class="title">KHỞI ĐỘNG DỰ ÁN THÍ XÂY DỰNG MÔ HÌNH KINH TẾ VƯỜN </div>
                         <div class="text">
-                            {{ __('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư,
-                                                                                                                và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với
-                                                                                                                người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn
-                                                                                                                nữa bà con có tập quán trồng trọt và chăn nuôi.') }}
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm.&nbsp;</span></p>
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi. Dự án nhằm xây dựng mô hình&nbsp; trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Dự án sẽ đồng hành cùng bà con trong quá trình xây dựng, phát triển mô hình. Qua đó, chia sẻ kiến thức khoa họa và kỹ năng làm vườn, giúp bà con hiểu sâu sắc về làm.</span></p>
+
                         </div>
-                        <button>{{ __('homepage.Read more') }}</button>
+
                     </div>
                 </div>
                 <div class="inner-part">
@@ -544,19 +532,14 @@
                             allowfullscreen></iframe>
                     </label>
                     <div class="content content-2">
-                        <span>{{ __('homepage.Tue, 2023/12/25') }}</span>
-                        <div class="title">
-                            {{ __('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC
-                                                                                                                MODEL') }}
-                        </div>
+                        <span>Tue, 2023/12/25'</span>
+                        <div class="title">BA BÊN HỌP THỐNG NHẤT THỰC HIỆN DỰ ÁN </div>
                         <div class="text">
-                            {{ __('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư,
-                                                                                                                và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với
-                                                                                                                người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn
-                                                                                                                nữa bà con có tập quán trồng trọt và chăn nuôi.') }}
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm.&nbsp;</span></p>
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi. Dự án nhằm xây dựng mô hình&nbsp; trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Dự án sẽ đồng hành cùng bà con trong quá trình xây dựng, phát triển mô hình. Qua đó, chia sẻ kiến thức khoa họa và kỹ năng làm vườn, giúp bà con hiểu sâu sắc về làm.</span></p>
+
                         </div>
-                        <button>{{ __('homepage.Read more') }}</button>
-                    </div>
+
                 </div>
                 <div class="inner-part">
                     <label for="tapImg" class="img">
@@ -566,23 +549,19 @@
                             allowfullscreen></iframe>
                     </label>
                     <div class="content content-3">
-                        <span>{{ __('homepage.Tue, 2023/12/25') }}</span>
-                        <div class="title">
-                            {{ __('homepage.STARTING THE PILOT PROJECT TO BUILD A GARDEN ECONOMIC
-                                                                                                                MODEL') }}
-                        </div>
+                        <span>Tue, 2023/12/25'</span>
+                        <div class="title">BA BÊN HỌP THỐNG NHẤT THỰC HIỆN DỰ ÁN </div>
                         <div class="text">
-                            {{ __('homepage.Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư,
-                                                                                                                và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với
-                                                                                                                người dân để phát triển cụm. Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn
-                                                                                                                nữa bà con có tập quán trồng trọt và chăn nuôi.') }}
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Ngày thứ tại, Ban lãnh đạo Xã Cà Dy, Đại diện cho cụm dân cư, và Đại diện Smile Eye charity đã họp và thống nhất dự án phát hõ trợ đồng hành thực tế với người dân để phát triển cụm.&nbsp;</span></p>
+                            <p style="text-indent: 30px;"><span style="font-weight: 400; color: #000000;">Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi. Dự án nhằm xây dựng mô hình&nbsp; trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Dự án sẽ đồng hành cùng bà con trong quá trình xây dựng, phát triển mô hình. Qua đó, chia sẻ kiến thức khoa họa và kỹ năng làm vườn, giúp bà con hiểu sâu sắc về làm.</span></p>
+
                         </div>
-                        <button>{{ __('homepage.Read more') }}</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     {{-- Contributors --}}
@@ -643,13 +622,13 @@
 
         <div class="section-content relative">
 
-            <div class="container section-title-container">
-                <h1 class="section-title section-title-center"><b></b><span class="section-title-main"
-                        style="font-size:150%;color:rgb(0, 0, 0);">Q&amp;A</span><b></b></h1>
-            </div>
-            <span class="scroll-to" data-label="Scroll to: #qas" data-bullet="false" data-link="#qas"
-                data-title="QAs"><a name="qas"></a></span>
-            <div class="row" id="row-303443696">
+                <div class="container section-title-container">
+                    <h1 class="section-title section-title-center"><b></b><span class="section-title-main"
+                            style="font-size:150%;color:rgb(0, 0, 0); margin-left: 600px">Q&amp;A</span><b></b></h1>
+                </div>
+                <span class="scroll-to" data-label="Scroll to: #qas" data-bullet="false" data-link="#qas"
+                    data-title="QAs"><a name="qas"></a></span>
+                <div class="row" id="row-303443696">
 
                 <div id="col-375192784" class="col small-12 large-12">
                     <div class="col-inner">
@@ -917,6 +896,7 @@
         </div>
         <!-- Copyright -->
     </footer>
+    <!-- Footer -->
     <!-- Footer -->
 </body>
 

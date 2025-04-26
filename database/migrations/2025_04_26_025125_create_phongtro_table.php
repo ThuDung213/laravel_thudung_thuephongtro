@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('phone')->nullable();
-            $table->string('start_date');
+            $table->dateTime('start_date')->nullable();
             $table->foreignId('payment_id')->nullable()->constrained()->nullOnDelete();
             $table->string('note')->nullable();
             $table->timestamps();

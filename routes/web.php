@@ -24,3 +24,8 @@ Route::get('/{locale}', function (string $locale) {
 });
 
 Route::get('/', [HomeController::class, 'index']);
+Route::post('/create', [HomeController::class, 'create'])->name('create');
+// Delete room
+Route::delete('/delete/{id}', [HomeController::class, 'destroy'])->name('delete');
+// Search room
+Route::get('/search', [HomeController::class, 'search'])->name('search');

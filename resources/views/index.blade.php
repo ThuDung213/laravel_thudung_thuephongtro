@@ -33,6 +33,11 @@
                     <td>{{ $rentRoom->payment->payment_type }}</td>
                     <td>{{ $rentRoom->note }}</td>
                     <td>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Create Rent Room
+                        </button>
+                    </td>
+                    <td>
                         <form action="{{ route('delete', ['id' => $rentRoom->id]) }}" method="POST"
                             style="display: inline-block;">
                             @csrf
@@ -46,10 +51,6 @@
         </tbody>
     </table>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Create Rent Room
-    </button>
 
     @include('components.rent-room-modal')
 </body>
